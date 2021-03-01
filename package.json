@@ -1,0 +1,38 @@
+{
+  "name": "linefont",
+  "version": "1.0.0",
+  "description": "Font for rendering data as line chart",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-ufo && npm run build-masterotfs & npm run build-otf && npm run build-ttf",
+    "build-ufo": "plop build-ufo",
+    "build-masterotfs": "buildmasterotfs --mkot -r,-omitMacNames -d linefont/linefont.designspace",
+    "build-otf": "npm run build-masterotfs && buildcff2vf -c -k -d linefont/linefont.designspace -o ./linefont.otf",
+    "build-ttf": "fontmake --no-optimize-gvar -m linefont/linefont.designspace -o variable --output-path ./linefont.ttf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-vis/linefont.git"
+  },
+  "keywords": [
+    "wavefont",
+    "datafont",
+    "a-vis",
+    "audio",
+    "datavis",
+    "opentype",
+    "truetype",
+    "waveform",
+    "timedata",
+    "timeseries"
+  ],
+  "author": "dmitry iv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-vis/linefont/issues"
+  },
+  "homepage": "https://github.com/a-vis/linefont#readme",
+  "devDependencies": {
+    "plop": "^2.7.4"
+  }
+}
