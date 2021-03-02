@@ -92,18 +92,6 @@ function master({values, width, weight}){
   ]
 }
 
-
-const sample = ({value, width, weight, code}) => {
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="_" format="2">
-  <advance width="${width}"/>
-  ${code.map(code=>`<unicode hex="${hex(code)}"/>`).join('')}
-  <outline>
-    <component base="point" yOffset="${(UPM * value / MAX_VALUE).toFixed(0)}" xOffset="${width*.5}" />
-  </outline>
-</glyph>`
-}
-
 const point = ({width, weight}) => {
   const R = weight * .5, c = .55
 
@@ -130,16 +118,28 @@ const point = ({width, weight}) => {
 `
 }
 
+const sample = ({value, width, weight, code}) => {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_" format="2">
+  <advance width="${width}"/>
+  ${code.map(code=>`<unicode hex="${hex(code)}"/>`).join('')}
+  <outline>
+    <component base="point" yOffset="${(UPM * value / MAX_VALUE).toFixed(0)}" xOffset="${width*.5}" />
+  </outline>
+</glyph>`
+}
+
 const line = ({value, width, weight}) => {
-  const R = weight*.5
+  const R = weight*.5, valueY = UPM * value / MAX_VALUE
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="to${value}" format="2">
   <advance width="${ width }"/>
   <outline>
+    <component base="point" yOffset="${valueY.toFixed(0)}" xOffset="${width*.5}"/>
     <contour>
       <point x="${ -width * .5 }" y="${ R }" type="line"/>
-      <point x="${ width * .5 }" y="${ (UPM * value / MAX_VALUE + R).toFixed(0) }" type="line"/>
-      <point x="${ width * .5 }" y="${ (UPM * value / MAX_VALUE - R).toFixed(0) }" type="line"/>
+      <point x="${ width * .5 }" y="${ (valueY + R).toFixed(0) }" type="line"/>
+      <point x="${ width * .5 }" y="${ (valueY - R).toFixed(0) }" type="line"/>
       <point x="${ -width * .5 }" y="${ -R }" type="line"/>
     </contour>
   </outline>

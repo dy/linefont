@@ -13,6 +13,7 @@ languagesystem DFLT dflt;
 # } mark;
 
 feature liga {
-  sub _10 _20' by to10;
-  pos _10 to10' <0 204 0 0>;
+  sub _10 _20' by to10; pos _10 to10' <0 204 0 0>;
+  sub _20 _30' by to10; pos _20 to10' <0 408 0 0>;
+  sub _30 _40' by to10; pos _30 to10' <0 612 0 0>;
 } liga;
