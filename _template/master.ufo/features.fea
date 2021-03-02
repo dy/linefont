@@ -11,3 +11,8 @@ languagesystem DFLT dflt;
 #   pos cursive up <anchor entry> <anchor 0 {{step}}>;
 #   pos cursive down <anchor entry> <anchor 0 -{{step}}>;
 # } mark;
+
+feature liga {
+  sub _10 _20' by to10;
+  pos _10 to10' <0 204 0 0>;
+} liga;

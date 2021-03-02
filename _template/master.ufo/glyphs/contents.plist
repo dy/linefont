@@ -9,7 +9,9 @@
     <key>point</key><string>point.glif</string>
 
     {{#each values}}
-    <key>_{{ this.value }}</key><string>{{ this.value }}.glif</string>{{#if this.clip}}<key>_{{ this.value }}.clip</key><string>{{ this.value }}.clip.glif</string>{{/if}}
+    <key>_{{ this.value }}</key><string>{{ this.value }}.glif</string>
+    <key>to{{ this.value }}</key><string>to{{ this.value }}.glif</string>
+    <key>to-{{ this.value }}</key><string>to-{{ this.value }}.glif</string>
     {{/each}}
   </dict>
 </plist>

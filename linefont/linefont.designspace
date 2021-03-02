@@ -31,12 +31,4 @@
             </location>
         </source>
     </sources>
-    <!-- <instances>
-        <instance familyname="Linefont" filename="linefont.ufo" name="Regular" postscriptfontname="Linefont-Regular" stylename="Regular">
-            <location>
-                <dimension name="width" xvalue="100" />
-                <dimension name="weight" xvalue="100" />
-            </location>
-        </instance>
-    </instances> -->
 </designspace>

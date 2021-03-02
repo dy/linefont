@@ -70,13 +70,30 @@ function master({values, width, weight}){
       force: true,
       type: 'add',
       path: `${destination}/glyphs/${value}.glif`,
-      template: glyph({value, width, code})
-    }))
+      template: sample({value, width, code})
+    })),
+    // all possible tangent values -100..100
+    ...values.map(({value, code}) => [
+      {
+        // verbose: false,
+        force: true,
+        type: 'add',
+        path: `${destination}/glyphs/to${value}.glif`,
+        template: line({value, width, code, weight})
+      },
+      {
+        // verbose: false,
+        force: true,
+        type: 'add',
+        path: `${destination}/glyphs/to-${value}.glif`,
+        template: line({value: -value, width, code, weight})
+      }
+    ]).flat()
   ]
 }
 
 
-const glyph = ({value, width, weight, code}) => {
+const sample = ({value, width, weight, code}) => {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_" format="2">
   <advance width="${width}"/>
@@ -107,6 +124,23 @@ const point = ({width, weight}) => {
       <point x="${ +c*R }" y="${ -R }"/>
       <point x="${ 0 }" y="${ -R }" type="curve" smooth="yes"/>
       <point x="${ -c*R }" y="${ -R }"/>
+    </contour>
+  </outline>
+</glyph>
+`
+}
+
+const line = ({value, width, weight}) => {
+  const R = weight*.5
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="to${value}" format="2">
+  <advance width="${ width }"/>
+  <outline>
+    <contour>
+      <point x="${ -width * .5 }" y="${ R }" type="line"/>
+      <point x="${ width * .5 }" y="${ (UPM * value / MAX_VALUE + R).toFixed(0) }" type="line"/>
+      <point x="${ width * .5 }" y="${ (UPM * value / MAX_VALUE - R).toFixed(0) }" type="line"/>
+      <point x="${ -width * .5 }" y="${ -R }" type="line"/>
     </contour>
   </outline>
 </glyph>
