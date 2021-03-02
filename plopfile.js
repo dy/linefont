@@ -3,14 +3,15 @@ const MAX_VALUE = 100
 
 const UPM = 2048
 // Note: values in terms of UPM, not values
-const WIDTH = [100,1000]
-const WEIGHT = [100,1000]
+const WIDTH = [10,1000]
+const WEIGHT = [10,1000]
 
 module.exports = function (plop) {
   const values = values100.map(({value, code}) => ({value, code}))
   const masters = [
     {values, width: WIDTH[0], weight: WEIGHT[0]},
     {values, width: WIDTH[1], weight: WEIGHT[0]},
+    {values, width: WIDTH[0], weight: WEIGHT[1]},
     {values, width: WIDTH[1], weight: WEIGHT[1]},
   ]
 
@@ -31,22 +32,11 @@ module.exports = function (plop) {
         destination: `linefont/`,
         base: '_template',
         templateFiles: '_template/*',
-        data: { values, step: upm(1), masters, WIDTH, WEIGHT, UPM, MAX_VALUE }
-      },
-      {
-        type: 'addMany',
-        force: true,
-        verbose: false,
-        destination: `linefont/100_100.ufo/`,
-        base: '_template/master.ufo',
-        templateFiles: '_template/master.ufo/**/*',
-        // data: { width: upm(width), values, step: upm(1), WIDTH, WEIGHT, UPM, MAX_VALUE }
+        data: { values, masters, WIDTH, WEIGHT, UPM, MAX_VALUE }
       },
       // populate masters
-      ...master(masters[0]),
-      ...master(masters[1]),
-      ...master(masters[2])
-    ]
+      ...masters.map(master)
+    ].flat()
 	});
 };
 
@@ -64,7 +54,7 @@ function master({values, width, weight}){
       destination: `${destination}/`,
       base: '_template/master.ufo',
       templateFiles: '_template/master.ufo/**/*',
-      data: { width: upm(width), values, step: upm(1), WIDTH, WEIGHT, UPM, MAX_VALUE }
+      data: { width: width, values, WIDTH, WEIGHT, UPM, MAX_VALUE }
     },
     // data point component
     {
@@ -89,10 +79,10 @@ function master({values, width, weight}){
 const glyph = ({value, width, weight, code}) => {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_" format="2">
-  <advance width="${upm(width)}"/>
+  <advance width="${width}"/>
   ${code.map(code=>`<unicode hex="${hex(code)}"/>`).join('')}
   <outline>
-    <component base="point" yOffset="${upm(value)}" xOffset="${width*.5}" />
+    <component base="point" yOffset="${(UPM * value / MAX_VALUE).toFixed(0)}" xOffset="${width*.5}" />
   </outline>
 </glyph>`
 }
@@ -122,8 +112,5 @@ const point = ({width, weight}) => {
 </glyph>
 `
 }
-
-// convert value to units-per-em (0-100 → 0-2048)
-const upm = (v) => (v * UPM / MAX_VALUE).toFixed(0)
 
 const hex = (v) => v.toString(16).toUpperCase().padStart(4,0)

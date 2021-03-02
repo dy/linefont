@@ -115,7 +115,7 @@ a {
   text-underline-offset: .108em;
   text-decoration-thickness: 2px;
 }
-#textarea {
+#fontarea {
   padding: 0;
   width: 100vw;
   height: 100vh;
@@ -126,13 +126,11 @@ a {
   z-index: -1;
   word-break: break-all;
   --wdth: 5;
-  --algn: 0.5;
+  --wght: 0.5;
   --size: 100px;
-  --track: 2px;
-  --radi: 50;
   font-size: var(--size);
   letter-spacing: var(--track);
-  font-variation-settings: 'wdth' var(--wdth), 'algn' var(--algn), 'radi' var(--radi);
+  font-variation-settings: 'wdth' var(--wdth), 'wght' var(--wght);
   background-size: 100vw calc(var(--size) / 10);
   background-image: linear-gradient(to bottom, rgb(230, 245, 255) 1px, transparent 1px);
   background-attachment: local;
@@ -146,11 +144,11 @@ a {
 Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/linefont">1.0</a></small></sup>
 </h1>
 <div class="panel-field">
-  <label for="width">Width</label> <input id="width" type="range" min="100" value="100" max="1000" step="1000" />
+  <label for="width">Width</label> <input id="width" type="range" min="10" value="100" max="1000" step="10" />
   <output id="widthValue"></output>
 </div>
 <div class="panel-field">
-  <label for="weight">Thickness</label> <input id="weight" type="range" min="100" value="100" max="1000" step="10"/>
+  <label for="weight">Weight</label> <input id="weight" type="range" min="10" value="100" max="1000" step="10"/>
   <output id="weightValue"></output>
 </div>
 <div class="panel-field">
@@ -163,41 +161,29 @@ Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/lin
 </div>
 </form>
 
-<textarea id="textarea" class="linefont" spellcheck="false">
+<textarea id="fontarea" class="linefont" spellcheck="false">
 &#0256;&#0257;&#0261;&#0266;&#0276;&#0286;&#0296;&#0306;&#0316;&#0326;&#0336;&#0346;&#0356;
 </textarea>
 
 <script>
-  // (width.oninput = e => {
-  //   let value = +width.value;
-  //   width.title = `'wdth' ${value}`;
-  //   widthValue.textContent = (+value).toPrecision(2);
-  //   textarea.style.setProperty('--wdth', value)
-  // })();
-  // (align.oninput = e => {
-  //   let value = +align.value;
-  //   align.title = `'algn' ${value}`;
-  //   alignValue.textContent = value;
-  //   textarea.style.setProperty('--algn', value)
-  // })();
-  // (size.oninput = e => {
-  //   let value = +size.value;
-  //   size.title = value;
-  //   sizeValue.textContent = value + 'px';
-  //   textarea.style.setProperty('--size', value + 'px')
-  // })();
-  // (track.oninput = e => {
-  //   let value = +track.value;
-  //   track.title = value;
-  //   trackValue.textContent = value + 'px';
-  //   textarea.style.setProperty('--track', value + 'px')
-  // })();
-  // (radius.oninput = e => {
-  //   let value = +radius.value;
-  //   radius.title = value;
-  //   radiusValue.textContent = value + '%';
-  //   textarea.style.setProperty('--radi', value)
-  // })();
+  (width.oninput = e => {
+    let value = +width.value;
+    width.title = `'wdth' ${value}`;
+    widthValue.textContent = (+value);
+    fontarea.style.setProperty('--wdth', value)
+  })();
+  (weight.oninput = e => {
+    let value = +weight.value;
+    weight.title = value;
+    weightValue.textContent = value;
+    fontarea.style.setProperty('--wght', value)
+  })();
+  (size.oninput = e => {
+    let value = +size.value;
+    size.title = value;
+    sizeValue.textContent = value + 'px';
+    fontarea.style.setProperty('--size', value + 'px')
+  })();
 </script>
 
 <script>
@@ -205,5 +191,5 @@ Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/lin
 //   return Array(N).fill(0).map((v, i) => Math.floor((Math.sin(i * .108) * Math.sin(i * .17 * Math.sin(i * .01) * .5 + 1) * 30 + 30))).map(v => !v ? ' ' : String.fromCharCode(0x0100 + v)).join('')
 // }
 
-// textarea.innerHTML = populate(44100*.2)
+// fontarea.innerHTML = populate(44100*.2)
 </script>
