@@ -14,7 +14,6 @@ module.exports = function (plop) {
     {values, width: WIDTH[0], weight: WEIGHT[1]},
     {values, width: WIDTH[1], weight: WEIGHT[1]},
   ]
-  console.log(values)
 
   // 1 → uni0001
   plop.setHelper('uni', function (arg) {
@@ -24,7 +23,6 @@ module.exports = function (plop) {
 
   // sub 1 2 → -1
   plop.setHelper('sub', function (a,b) {
-    // console.log(a,b,a-b)
     return a-b
 	});
 

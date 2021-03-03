@@ -1,6 +1,8 @@
 languagesystem DFLT dflt;
 
 feature mark {
+  pos cursive point <anchor 0 0> <anchor 0 0>;
+
   {{#each values}}
   pos cursive _{{this.value}} <anchor NULL> <anchor {{ ../width }} {{this.upmValue}}>;
   {{/each}}
