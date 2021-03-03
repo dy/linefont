@@ -162,7 +162,7 @@ Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/lin
 </form>
 
 <textarea id="fontarea" class="linefont" spellcheck="false">
-&#0256;&#0257;&#0261;&#0266;&#0276;&#0286;&#0296;&#0306;&#0316;&#0326;&#0336;&#0346;&#0356;
+&#0256;&#0256;&#0256;&#0256;&#0257;&#0261;&#0266;&#0276;&#0286;&#0296;&#0306;&#0316;&#0326;&#0336;&#0346;&#0356;
 </textarea>
 
 <script>
@@ -187,9 +187,9 @@ Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/lin
 </script>
 
 <script>
-// function populate(N) {
-//   return Array(N).fill(0).map((v, i) => Math.floor((Math.sin(i * .108) * Math.sin(i * .17 * Math.sin(i * .01) * .5 + 1) * 30 + 30))).map(v => !v ? ' ' : String.fromCharCode(0x0100 + v)).join('')
-// }
+function populate(N) {
+  return Array(N).fill(0).map((v, i) => Math.floor(Math.sin(i * .108)*50+50)).map(v => String.fromCharCode(0x0100 + v)).join('')
+}
 
-// fontarea.innerHTML = populate(44100*.2)
+fontarea.innerHTML = populate(2000)
 </script>
