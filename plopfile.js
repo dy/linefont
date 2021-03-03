@@ -1,10 +1,10 @@
-const values100 = Array.from({length: 128}).map((v,i)=>({value: i, code: [i+0x0100]}))
+const values100 = Array.from({length: 127}).map((v,i)=>({value: i, code: [i+0x0100]}))
 const MAX_VALUE = 100
 
 const UPM = 2048
 // Note: values in terms of UPM, not values
-const WIDTH = [10,1000]
-const WEIGHT = [10,1000]
+const WIDTH = [50,500]
+const WEIGHT = [20,500]
 
 module.exports = function (plop) {
   const values = values100.map(({value, code}) => ({value, code, upmValue:(value*UPM/MAX_VALUE).toFixed(0)}))
@@ -12,6 +12,8 @@ module.exports = function (plop) {
     {values, width: WIDTH[0], weight: WEIGHT[0]},
     {values, width: WIDTH[1], weight: WEIGHT[0]},
     {values, width: WIDTH[0], weight: WEIGHT[1]},
+    // NOTE: extra master is needed to mitigate tangent linear interpolation artifact
+    {values, width: 200, weight: WEIGHT[1]},
     {values, width: WIDTH[1], weight: WEIGHT[1]},
   ]
 
@@ -158,15 +160,20 @@ const sample = ({value, width, weight, code}) => {
 
 const line = ({value, width, weight}) => {
   const R = weight*.5, valueY = UPM * value / MAX_VALUE
+
+  // the normal has unfortunately poor interpolation on middle values
+  const angle = Math.atan2(valueY,width);
+  const xShift = Math.sin(angle) * R, yShift = Math.cos(angle) * R;
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="to${value}" format="2">
   <advance width="${ width }"/>
   <outline>
     <contour>
-      <point x="${ -width*.5 }" y="${ R }" type="line"/>
-      <point x="${ width*.5 }" y="${ (valueY + R).toFixed(0) }" type="line"/>
-      <point x="${ width*.5 }" y="${ (valueY - R).toFixed(0) }" type="line"/>
-      <point x="${ -width*.5 }" y="${ -R }" type="line"/>
+      <point x="${ (-width*.5 - xShift).toFixed(0) }" y="${ yShift.toFixed(0) }" type="line"/>
+      <point x="${ (width*.5 - xShift).toFixed(0) }" y="${ (valueY + yShift).toFixed(0) }" type="line"/>
+      <point x="${ (width*.5 + xShift).toFixed(0) }" y="${ (valueY - yShift).toFixed(0) }" type="line"/>
+      <point x="${ (-width*.5 + xShift).toFixed(0) }" y="${ -yShift.toFixed(0) }" type="line"/>
     </contour>
   </outline>
 </glyph>

@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="{{ WIDTH.[1] }}" minimum="{{ WIDTH.[0] }}" maximum="{{ WIDTH.[1] }}" name="width" tag="wdth"/>
-        <axis default="{{ WEIGHT.[1] }}" minimum="{{ WEIGHT.[0] }}" maximum="{{ WEIGHT.[1] }}" name="weight" tag="wght"/>
+        <axis default="{{ WIDTH.[0] }}" minimum="{{ WIDTH.[0] }}" maximum="{{ WIDTH.[1] }}" name="width" tag="wdth"/>
+        <axis default="{{ WEIGHT.[0] }}" minimum="{{ WEIGHT.[0] }}" maximum="{{ WEIGHT.[1] }}" name="weight" tag="wght"/>
     </axes>
     <rules></rules>
     <sources>

@@ -74,13 +74,13 @@ html {font-size: 100%;}
 }
 #panel h1 {
   text-align: center;
-  margin: 0 0 .5rem;
+  margin: -.25rem 0 .5rem;
   font-size: 1.5rem;
 }
 .panel-field {
   display: flex;
   flex-direction: row;
-  height: 2rem;
+  height: 1.75rem;
   align-items: center;
 }
 .panel-field label {
@@ -144,25 +144,22 @@ a {
 Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/linefont">1.0</a></small></sup>
 </h1>
 <div class="panel-field">
-  <label for="width">Width</label> <input id="width" type="range" min="10" value="100" max="1000" step="10" />
+  <label for="width">Width</label> <input id="width" type="range" min="20" value="20" max="500" step="10" />
   <output id="widthValue"></output>
 </div>
 <div class="panel-field">
-  <label for="weight">Weight</label> <input id="weight" type="range" min="10" value="100" max="1000" step="10"/>
+  <label for="weight">Weight</label> <input id="weight" type="range" min="20" value="20" max="500" step="10"/>
   <output id="weightValue"></output>
 </div>
 <div class="panel-field">
   <label for="size">Size</label> <input id="size" type="range" min="5" value="200" max="200" step="1"/>
   <output id="sizeValue"></output>
 </div>
-<div class="panel-cta">
-  <button type="submit">Github / Docs</button>
-  </div>
 </div>
 </form>
 
 <textarea id="fontarea" class="linefont" spellcheck="false">
-&#0256;&#0256;&#0256;&#0256;&#0257;&#0261;&#0266;&#0276;&#0286;&#0296;&#0306;&#0316;&#0326;&#0336;&#0346;&#0356;
+&#0256;&#0256;&#0256;&#0256;&#0257;&#0261;&#0266;&#0276;&#0286;&#0296;&#0306;&#0316;&#0326;&#0336;&#0346;
 </textarea>
 
 <script>
@@ -187,9 +184,22 @@ Linefont&thinsp;<sup><small><a title="github" href="https://github.com/a-vis/lin
 </script>
 
 <script>
+function sine(N) {
+  return Array(N).fill(0).map((v, i) => Math.floor(Math.sin(i /3)*50+50))
+}
+function rect(N) {
+  return Array(N).fill(0).map((v, i) => Math.floor(square(i / 40, .5)*50+50))
+}
+function square (t, ratio) {
+	t%=1
+	if (t < 0) t += 1
+	if (ratio == null) ratio = 0.5
+	if (t >= ratio) return -1;
+	return 1;
+};
 function populate(N) {
-  return Array(N).fill(0).map((v, i) => Math.floor(Math.sin(i * .108)*50+50)).map(v => String.fromCharCode(0x0100 + v)).join('')
+  return Array(N).fill(0).map((v, i) => Math.floor((Math.sin(i * .108) * Math.sin(i * .17 * Math.sin(i * .01) * .5 + 1) * 30 + 30)))
 }
 
-fontarea.innerHTML = populate(2000)
+fontarea.innerHTML = populate(10000).map(v => String.fromCharCode(0x0100 + v)).join('')
 </script>
