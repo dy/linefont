@@ -7,7 +7,7 @@ const WIDTH = [10,1000]
 const WEIGHT = [10,1000]
 
 module.exports = function (plop) {
-  const values = values100.map(({value, code}) => ({value, code}))
+  const values = values100.map(({value, code}) => ({value, code, upmValue:(value*UPM/MAX_VALUE).toFixed(0)}))
   const masters = [
     {values, width: WIDTH[0], weight: WEIGHT[0]},
     {values, width: WIDTH[1], weight: WEIGHT[0]},
@@ -15,6 +15,7 @@ module.exports = function (plop) {
     {values, width: WIDTH[1], weight: WEIGHT[1]},
   ]
 
+  // 1 → uni0001
   plop.setHelper('uni', function (arg) {
     if (Array.isArray(arg)) return arg.map(arg => `u${hex(parseInt(arg))}`).join(',')
     return `u${hex(parseInt(arg))}`
@@ -54,7 +55,7 @@ function master({values, width, weight}){
       destination: `${destination}/`,
       base: '_template/master.ufo',
       templateFiles: '_template/master.ufo/**/*',
-      data: { width: width, values, WIDTH, WEIGHT, UPM, MAX_VALUE }
+      data: { width, values, WIDTH, WEIGHT, UPM, MAX_VALUE }
     },
     // data point component
     {
@@ -133,7 +134,7 @@ const line = ({value, width, weight}) => {
   const R = weight*.5, valueY = UPM * value / MAX_VALUE
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="to${value}" format="2">
-  <advance width="${ width }"/>
+  <advance width="${width}"/>
   <outline>
     <component base="point" yOffset="${valueY.toFixed(0)}" xOffset="${width*.5}"/>
     <contour>

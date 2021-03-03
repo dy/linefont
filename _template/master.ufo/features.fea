@@ -1,19 +1,35 @@
 languagesystem DFLT dflt;
 
-@value = [{{#each values}}_{{ this.value }}{{#if this.clip}} _{{ this.value}}.clip{{/if}} {{/each}}];
+@value = [{{#each values}}_{{ this.value }} {{/each}}];
 
+feature mark {
+  {{#each values}}
+  pos cursive _{{this.value}} <anchor NULL> <anchor {{ ../width }} {{this.upmValue}}>;
+  {{/each}}
 
-# anchorDef 0 {{ baseline }} entry;
-# anchorDef {{ width }} {{ baseline }} exit;
-
-# feature mark {
-#   pos cursive @value <anchor entry> <anchor exit>;
-#   pos cursive up <anchor entry> <anchor 0 {{step}}>;
-#   pos cursive down <anchor entry> <anchor 0 -{{step}}>;
-# } mark;
+  {{#each values}}
+  pos cursive to{{this.value}} <anchor 0 0> <anchor {{../width}} {{this.upmValue}}>;
+  {{/each}}
+} mark;
 
 feature liga {
-  sub _10 _20' by to10; pos _10 to10' <0 204 0 0>;
-  sub _20 _30' by to10; pos _20 to10' <0 408 0 0>;
-  sub _30 _40' by to10; pos _30 to10' <0 612 0 0>;
+  # sub _10 [_10 _20 _30 _40 _50 _60 _70]' by [to0 to10 to20 to30 to40 to50 to60];
+  # sub _10 [to0 to10 to20 to30 to40 to50 to60] [_10 _20 _30 _40 _50 _60 _70] by ;
+
+  # rsubs ignore final result of replacement and instead look at the initial sequence
+  rsub _10 [_20 _30 _40]' by [to10 to20 to30];
+  rsub _20 [_30 _40 _50]' by [to10 to20 to30];
+  # rsub _30 _40' by to10;
+  # rsub _40 _50' by to10;
+
+  # [_20 _30 _40 _50 _60 _70];
+  # sub _10 _21' by to11 _21;
+  # sub _10 _22' by to12 _22;
+
+  # sub _11 _23' by to12 _23;
+
+  # sub _20 _30' by to10 _30;
+  # sub _30 _40' by to10 _40;
+  # sub _40 _50' by to10 _50;
+  # sub _50 _60' by to10 _60;
 } liga;
