@@ -1,4 +1,4 @@
-const values100 = Array.from({length: 129}).map((v,i)=>({value: i, code: [i+0x0100]}))
+const values100 = Array.from({length: 128}).map((v,i)=>({value: i, code: [i+0x0100]}))
 const MAX_VALUE = 100
 
 const UPM = 2048
@@ -14,11 +14,18 @@ module.exports = function (plop) {
     {values, width: WIDTH[0], weight: WEIGHT[1]},
     {values, width: WIDTH[1], weight: WEIGHT[1]},
   ]
+  console.log(values)
 
   // 1 → uni0001
   plop.setHelper('uni', function (arg) {
     if (Array.isArray(arg)) return arg.map(arg => `u${hex(parseInt(arg))}`).join(',')
     return `u${hex(parseInt(arg))}`
+	});
+
+  // sub 1 2 → -1
+  plop.setHelper('sub', function (a,b) {
+    // console.log(a,b,a-b)
+    return a-b
 	});
 
 	plop.setGenerator('build-ufo', {
@@ -136,7 +143,7 @@ const line = ({value, width, weight}) => {
 <glyph name="to${value}" format="2">
   <advance width="${width}"/>
   <outline>
-    <component base="point" yOffset="${valueY.toFixed(0)}" xOffset="${width*.5}"/>
+    <!--<component base="point" yOffset="${valueY.toFixed(0)}" xOffset="${width*.5}"/>-->
     <contour>
       <point x="${ -width * .5 }" y="${ R }" type="line"/>
       <point x="${ width * .5 }" y="${ (valueY + R).toFixed(0) }" type="line"/>

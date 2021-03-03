@@ -1,0 +1,28 @@
+@value = [{{#each values}}_{{ this.value }} {{/each}}];
+
+# Option 1. Reversesub: + compact notation - 100+kb
+# rsubs ignore final result of replacement and instead look at the initial sequence
+# rsub _0 @value' by [to0 to1 to2 to3];
+# rsub _1 @value' by [to-1 to0 to1 to2];
+# rsub _2 @value' by [to-2 to-1 to0 to1];
+{{#each values as |v1 i|}}
+rsub _{{v1.value}} @value' by [{{#each ../values as |v2 i|}}to{{sub v2.value v1.value}} {{/each}}];
+{{/each}}
+# rsub _10 [_20 _30 _40]' by [to10 to20 to30];
+# rsub _20 [_30 _40 _50]' by [to10 to20 to30];
+# rsub _30 [_40 _50 _60]' by [to10 to20 to30];
+
+
+# Option 2. Direct subs, multiple rules, exclude components: - too lengthy notation - same big size - table overflow on building font
+# sub _0 _0' by to0 _0;
+# sub _0 _1' by to1 _1;
+# sub _0 _2' by to2 _2;
+# sub _1 _0' by to-1 _0;
+# sub _1 _1' by to0 _1;
+# {{#each values as |v1|}}
+# {{#each ../values as |v2|}}
+# sub _{{v1.value}} _{{v2.value}}' by to{{sub v2.value v1.value}} _{{v2.value}};
+# {{/each}}
+# {{/each}}
+# sub _10 _20' by to10 _20;
+# sub _20 _30' by to10 _30;
