@@ -7,6 +7,7 @@
     <key>down</key><string>down.glif</string>
     <key>space</key><string>space.glif</string>
     <key>point</key><string>point.glif</string>
+    <key>join</key><string>join.glif</string>
 
     {{#each values}}
     <key>_{{ this.value }}</key><string>{{ this.value }}.glif</string>

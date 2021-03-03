@@ -8,7 +8,7 @@
     <string>up</string>
     <string>down</string>
     <string>space</string>
-    <string>point</string>
+    <string>join</string>
     {{#each values}}
     <string>_{{ this.value }}</string>
     {{/each}}

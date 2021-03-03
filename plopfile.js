@@ -26,6 +26,11 @@ module.exports = function (plop) {
     return a-b
 	});
 
+  // half 1 → .5
+  plop.setHelper('half', function (a) {
+    return a*.5
+	});
+
 	plop.setGenerator('build-ufo', {
     description: 'Build master values',
     prompts: [],
@@ -62,13 +67,20 @@ function master({values, width, weight}){
       templateFiles: '_template/master.ufo/**/*',
       data: { width, values, WIDTH, WEIGHT, UPM, MAX_VALUE }
     },
-    // data point component
+    // data point component (unlike join, it is centered)
     {
       // verbose: false,
       force: true,
       type: 'add',
       path: `${destination}/glyphs/point.glif`,
       template: point({width, weight})
+    },
+    {
+      // verbose: false,
+      force: true,
+      type: 'add',
+      path: `${destination}/glyphs/join.glif`,
+      template: join({width, weight})
     },
     // value data points
     ...values.map(({code, value}) => ({
@@ -98,12 +110,12 @@ function master({values, width, weight}){
   ]
 }
 
+// data point, used for joins
 const point = ({width, weight}) => {
   const R = weight * .5, c = .55
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="point" format="2">
-  <advance width="${ width }"/>
   <outline>
     <contour>
       <point x="${ -R }" y="${ -c*R }"/>
@@ -123,14 +135,23 @@ const point = ({width, weight}) => {
 </glyph>
 `
 }
+// point with line-specific advance/shift context
+const join = ({width,weight}) => {
+return `<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="point" format="2">
+  <advance width="${ 0 }"/>
+  <outline><component base="point" xOffset="${-width*.5}" yOffset="${0}"/></outline>
+</glyph>`
+}
 
+// glyps are not necessary to have content - it's done via subs
 const sample = ({value, width, weight, code}) => {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_" format="2">
-  <advance width="${width}"/>
+  <advance width="${ width }"/>
   ${code.map(code=>`<unicode hex="${hex(code)}"/>`).join('')}
   <outline>
-    <component base="point" yOffset="${(UPM * value / MAX_VALUE).toFixed(0)}" xOffset="${width*.5}" />
+  <component base="point" xOffset="${ width * .5 }" yOffset="${ (UPM*value/MAX_VALUE).toFixed(0) }"/>
   </outline>
 </glyph>`
 }
@@ -139,14 +160,13 @@ const line = ({value, width, weight}) => {
   const R = weight*.5, valueY = UPM * value / MAX_VALUE
   return `<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="to${value}" format="2">
-  <advance width="${width}"/>
+  <advance width="${ width }"/>
   <outline>
-    <!--<component base="point" yOffset="${valueY.toFixed(0)}" xOffset="${width*.5}"/>-->
     <contour>
-      <point x="${ -width * .5 }" y="${ R }" type="line"/>
-      <point x="${ width * .5 }" y="${ (valueY + R).toFixed(0) }" type="line"/>
-      <point x="${ width * .5 }" y="${ (valueY - R).toFixed(0) }" type="line"/>
-      <point x="${ -width * .5 }" y="${ -R }" type="line"/>
+      <point x="${ -width*.5 }" y="${ R }" type="line"/>
+      <point x="${ width*.5 }" y="${ (valueY + R).toFixed(0) }" type="line"/>
+      <point x="${ width*.5 }" y="${ (valueY - R).toFixed(0) }" type="line"/>
+      <point x="${ -width*.5 }" y="${ -R }" type="line"/>
     </contour>
   </outline>
 </glyph>

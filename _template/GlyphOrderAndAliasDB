@@ -3,6 +3,8 @@
 _ _ uni0020,uni0021,uni0022,uni0023,uni0024,uni0025,uni0026,uni0027
 up up uni0301
 down down uni0300
+join join
+point point
 
 {{#each values }}
 _{{ this.value }} _{{ this.value }} {{uni this.code}}
