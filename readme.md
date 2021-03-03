@@ -1,7 +1,7 @@
 # linefont
 
-Render line chart data with OTF.
+Render line chart data with OTF. Font provides values from _0..100_ range, corresponding to unicode _U+0100-017F_ range.
 
-Font provides values from 0..100 range, corresponding to unicode U+0100-017F range.
+See also [wavefont](https://github.com/a-vis/wavefont).
 
 <p align="center">🕉<p>
