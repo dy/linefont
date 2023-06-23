@@ -5,8 +5,6 @@
 	<key>public.glyphOrder</key>
 	<array>
 		<string>.notdef</string>
-    <string>up</string>
-    <string>down</string>
     <string>space</string>
     <string>join</string>
     {{#each values}}

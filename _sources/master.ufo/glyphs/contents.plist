@@ -3,16 +3,14 @@
 <plist version="1.0">
   <dict>
     <key>.notdef</key><string>_notdef.glif</string>
-    <key>up</key><string>up.glif</string>
-    <key>down</key><string>down.glif</string>
     <key>space</key><string>space.glif</string>
     <key>point</key><string>point.glif</string>
     <key>join</key><string>join.glif</string>
 
-    {{#each values}}
-    <key>_{{ this.value }}</key><string>{{ this.value }}.glif</string>
-    <key>to{{ this.value }}</key><string>to{{ this.value }}.glif</string>
-    <key>to-{{ this.value }}</key><string>to-{{ this.value }}.glif</string>
+    {{#each FONT.values as |code value|}}
+    <key>_{{ value }}</key><string>{{ value }}.glif</string>
+    <key>to{{ value }}</key><string>to{{ value }}.glif</string>
+    <key>to-{{ value }}</key><string>to-{{ value }}.glif</string>
     {{/each}}
   </dict>
 </plist>

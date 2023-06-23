@@ -1,9 +1,9 @@
-@value = [{{#each values}}_{{ this.value }} {{/each}}];
+@value = [{{#each FONT.values as |code value|}}_{{ value }} {{/each}}];
 
 feature liga {
   # TODO: Replace single values with joins
-  {{#each values as |v|}}
-  # sub _{{v.value}} by _{{v.value}} join;
+  {{#each FONT.values as |code value|}}
+  # sub _{{value}} by _{{value}} join;
   {{/each}}
 
   # Reversesub is compact notation and has no overflow, compared to O(N²) pair subs
@@ -15,14 +15,14 @@ feature liga {
   # rsub _20 [_20 _30 _40 _50]' by [to0 to10 to20 to30];
   # rsub _30 [_20 _30 _40 _50]' by [to-10 to0 to10 to20];
   # rsub _40 [_20 _30 _40 _50]' by [to-20 to-10 to0 to10];
-  {{#each values as |v1 i|}}
-  rsub _{{v1.value}} @value' by [{{#each ../values as |v2 i|}}to{{sub v2.value v1.value}} {{/each}}];
+  {{#each FONT.values as |v1 i|}}
+  rsub _{{v1}} @value' by [{{#each ../FONT.values as |v2 i|}}to{{sub v2 v1}} {{/each}}];
   {{/each}}
 
   # Append join after line - reduces size by 30% compared to TTF components in lines
-  {{#each values as |v|}}
-  sub to{{v.value}} by to{{v.value}} join;
-  sub to-{{v.value}} by to-{{v.value}} join;
+  {{#each FONT.values as |code value|}}
+  sub to{{value}} by to{{value}} join;
+  sub to-{{value}} by to-{{value}} join;
   {{/each}}
 
 } liga;
