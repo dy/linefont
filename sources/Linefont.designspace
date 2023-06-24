@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="10" minimum="10" maximum="500" name="Width" tag="wdth"/>
+        <axis default="1" minimum="1" maximum="400" name="Weight" tag="wght"/>
+    </axes>
+
+    <sources>
+        <source familyname="Linefont" filename="Linefont[min,min].ufo" name="Master_0" stylename="Master 0">
+            <location>
+                <dimension name="Weight" xvalue="1" />
+                <dimension name="Width" xvalue="10" />
+            </location>
+        </source>
+        <source familyname="Linefont" filename="Linefont[min,max].ufo" name="Master_1" stylename="Master 1">
+            <location>
+                <dimension name="Weight" xvalue="1" />
+                <dimension name="Width" xvalue="500" />
+            </location>
+        </source>
+        <source familyname="Linefont" filename="Linefont[max,min].ufo" name="Master_2" stylename="Master 2">
+            <location>
+                <dimension name="Weight" xvalue="400" />
+                <dimension name="Width" xvalue="10" />
+            </location>
+        </source>
+        <source familyname="Linefont" filename="Linefont[max,max].ufo" name="Master_3" stylename="Master 3">
+            <location>
+                <dimension name="Weight" xvalue="400" />
+                <dimension name="Width" xvalue="500" />
+            </location>
+        </source>
+    </sources>
+
+    <instances>
+        <instance filename="instance_ufo/Linefont-Thin.ufo" name="Linefont Thin" familyname="Linefont" stylename="Thin">
+            <location>
+                <dimension name="Weight" xvalue="100" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-ExtraLight.ufo" name="Linefont ExtraLight" familyname="Linefont" stylename="ExtraLight">
+            <location>
+                <dimension name="Weight" xvalue="200" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-Light.ufo" name="Linefont Light" familyname="Linefont" stylename="Light">
+            <location>
+                <dimension name="Weight" xvalue="300" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+    </instances>
+</designspace>

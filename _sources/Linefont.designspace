@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}"/>
+        <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}"/>
+    </axes>
+
+    <sources>
+        {{#each MASTERS as |master name| }}
+        <source familyname="Linefont" filename="Linefont[{{ name }}].ufo" name="Master_{{@index}}" stylename="Master {{@index}}">
+            <location>
+                {{#each master as |axisValue axisId|}}
+                <dimension name="{{axisName axisId }}" xvalue="{{ axisValue }}" />
+                {{/each}}
+            </location>
+        </source>
+        {{/each}}
+    </sources>
+
+    <instances>
+        <instance filename="instance_ufo/Linefont-Thin.ufo" name="Linefont Thin" familyname="Linefont" stylename="Thin">
+            <location>
+                <dimension name="Weight" xvalue="100" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-ExtraLight.ufo" name="Linefont ExtraLight" familyname="Linefont" stylename="ExtraLight">
+            <location>
+                <dimension name="Weight" xvalue="200" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-Light.ufo" name="Linefont Light" familyname="Linefont" stylename="Light">
+            <location>
+                <dimension name="Weight" xvalue="300" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+    </instances>
+</designspace>

@@ -1,23 +1,23 @@
 {
   "name": "linefont",
-  "version": "1.0.0",
-  "description": "Font for rendering data as line chart",
+  "version": "2.0.0",
+  "description": "Typeface for visualizing data as line chart",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-ufo && npm run build-masterotfs & npm run build-otf && npm run build-ttf",
-    "build-ufo": "plop build-ufo",
-    "build-masterotfs": "buildmasterotfs --mkot -r,-omitMacNames -d linefont/linefont.designspace",
-    "build-otf": "npm run build-masterotfs && buildcff2vf -c -k -d linefont/linefont.designspace -o ./linefont.otf",
-    "build-ttf": "fontmake --no-optimize-gvar -m linefont/linefont.designspace -o variable --output-path ./linefont.ttf"
+    "build": "make build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a-vis/linefont.git"
+    "url": "git+https://github.com/dy/linefont.git"
   },
+  "files": [
+    "fonts",
+    "index.js"
+  ],
   "keywords": [
     "wavefont",
     "datafont",
-    "a-vis",
+    "dy",
     "audio",
     "datavis",
     "opentype",
@@ -26,13 +26,16 @@
     "timedata",
     "timeseries"
   ],
-  "author": "dmitry iv",
-  "license": "ISC",
+  "author": "Dmitry Iv <dfcreative@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/a-vis/linefont/issues"
+    "url": "https://github.com/dy/linefont/issues"
   },
-  "homepage": "https://github.com/a-vis/linefont#readme",
+  "homepage": "https://github.com/dy/linefont#readme",
   "devDependencies": {
-    "plop": "^2.7.4"
+    "dedent": "^0.7.0",
+    "npm-run-all": "^4.1.5",
+    "plop": "^3.1.0",
+    "shx": "^0.3.3"
   }
 }
