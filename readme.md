@@ -1,4 +1,4 @@
-# linefont ∿
+# ∿ linefont [![build](https://github.com/dy/linefont/actions/workflows/build.yaml/badge.svg)](https://github.com/dy/linefont/actions/workflows/build.yaml)
 
 Typeface for rendering line chart data.
 
