@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="width" tag="wdth"/>
-        <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="weight" tag="wght"/>
+        <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}"/>
+        <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}"/>
     </axes>
 
     <sources>
@@ -18,32 +18,22 @@
     </sources>
 
     <instances>
-        <instance filename="instance_ufo/Wavefont-Thin.ufo" name="Wavefont Thin" familyname="Wavefont" stylename="Thin">
+        <instance filename="instance_ufo/Linefont-Thin.ufo" name="Linefont Thin" familyname="Linefont" stylename="Thin">
             <location>
                 <dimension name="Weight" xvalue="100" />
-                <dimension name="Roundness" xvalue="100" />
-                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+                <dimension name="Width" xvalue="100" />
             </location>
         </instance>
-        <instance filename="instance_ufo/Wavefont-ExtraLight.ufo" name="Wavefont ExtraLight" familyname="Wavefont" stylename="ExtraLight">
+        <instance filename="instance_ufo/Linefont-ExtraLight.ufo" name="Linefont ExtraLight" familyname="Linefont" stylename="ExtraLight">
             <location>
                 <dimension name="Weight" xvalue="200" />
-                <dimension name="Roundness" xvalue="100" />
-                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+                <dimension name="Width" xvalue="100" />
             </location>
         </instance>
-        <instance filename="instance_ufo/Wavefont-Light.ufo" name="Wavefont Light" familyname="Wavefont" stylename="Light">
+        <instance filename="instance_ufo/Linefont-Light.ufo" name="Linefont Light" familyname="Linefont" stylename="Light">
             <location>
                 <dimension name="Weight" xvalue="300" />
-                <dimension name="Roundness" xvalue="100" />
-                <dimension name="Vertical Element Alignment" xvalue="0.5" />
-            </location>
-        </instance>
-        <instance filename="instance_ufo/Wavefont-Regular.ufo" name="Wavefont Regular" familyname="Wavefont" stylename="Regular">
-            <location>
-                <dimension name="Weight" xvalue="400" />
-                <dimension name="Roundness" xvalue="100" />
-                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+                <dimension name="Width" xvalue="100" />
             </location>
         </instance>
     </instances>

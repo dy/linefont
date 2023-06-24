@@ -9,8 +9,9 @@ const SPACE = [0x09,0x0A,0x0B,0x0C,0x0D,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
 
 // axes definition, per https://github.com/dy/wavefont/issues/42
 const AXES = {
+  // NOTE: width comes first to be compat with gftools
   width: {name: 'Width', tag: 'wdth', min: 10, max: 500, default: 10},
-  weight: {name: 'Weight', tag: 'wght', min: 10, max: 500, default: 10}
+  weight: {name: 'Weight', tag: 'wght', min: 1, max: 400, default: 1},
 }
 
 const FONT = {
@@ -82,7 +83,7 @@ module.exports = function (plop) {
   // width -> Width
   plop.setHelper('axisName', v => AXES[v].name);
 
-
+  console.log(SPACE)
 	plop.setGenerator('build-ufo', {
     description: 'Build master values',
     prompts: [],
@@ -141,7 +142,7 @@ function master({width, weight, name}){
       force: true,
       type: 'add',
       path: `${destination}/glyphs/${value}.glif`,
-      template: sample({value, width, code})
+      template: sample({value, width, code, alias: FONT.alias[value]})
     })),
     // all possible tangent values -100..100
     ...FONT.values.map((code, value) => [
@@ -199,11 +200,12 @@ const join = ({width,weight}) => {
 }
 
 // glyps are not necessary to have content - it's done via subs
-const sample = ({value, width, weight, code}) => {
+const sample = ({value, width, weight, code, alias}) => {
   return dedent`<?xml version="1.0" encoding="UTF-8"?>
     <glyph name="_" format="2">
       <advance width="${ width }"/>
-      <unicode hex="${hex(code)}"/>
+      <unicode hex="${ hex(code) }"/>
+      ${alias?.map(code => `<unicode hex="${ hex(code) }"/>`).join('') || ``}
       <outline>
       <component base="point" xOffset="${ width * .5 }" yOffset="${ (UPM*value/FONT.max).toFixed(0) }"/>
       </outline>

@@ -7,14 +7,14 @@ Typeface for rendering line chart data.
 
 ## Usage
 
-Place [linefont.woff2_](./fonts/variable/Wavefont[ROND,YELA,wght].woff2) into your project directory and use this code:
+Place [linefont.woff2_](./fonts/variable/Linefont[wdth,wght].woff2) into your project directory and use this code:
 
 ```html
 <style>
 @font-face {
 	font-family: linefont;
 	font-display: block;
-	src: url(./linefont.woff2) format('woff2');
+	src: url(./Linefont[wdth,wght].woff2) format('woff2');
 }
 .linefont {
 	--wght: 10;

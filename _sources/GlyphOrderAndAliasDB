@@ -1,8 +1,8 @@
 .notdef	.notdef
-_ _ uni0020,uni0021,uni0022,uni0023,uni0024,uni0025,uni0026,uni0027
+space space {{#each SPACE as |code|}}{{uni code}}{{#unless @last}},{{/unless}}{{/each}}
 
 {{#each FONT.values as |code value| }}
-_{{ value }} _{{ value }} {{uni code}}
+_{{ value }} _{{ value }} {{uni code}}{{#if (lookup ../FONT.alias value)}}{{#each (lookup ../font.alias value) as |aliasCode|}},{{uni aliasCode}}{{/each}}{{/if}}
 to{{value}} to{{value}}
 to-{{value}} to-{{value}}
 {{/each}}

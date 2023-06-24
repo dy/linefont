@@ -3,6 +3,7 @@ buildStatic: true
 sources:
   - Linefont.designspace
 familyName: Linefont
+# note - gftools has own order of axes in produced file
 axisOrder:
   - wdth
   - wght

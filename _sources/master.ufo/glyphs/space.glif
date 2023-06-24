@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="space" format="2">
   <advance width="{{ width }}"/>
-  {{#each SPACE as |code|}}<unicode hex="{{uni code}}"/>
+  {{#each SPACE as |code i|}}<unicode hex="{{hex code}}"/>
   {{/each}}
 </glyph>
