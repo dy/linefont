@@ -7,7 +7,7 @@ Typeface for rendering line chart data.
 
 ## Usage
 
-Place [linefont.woff2_](./fonts/variable/Linefont[wdth,wght].woff2) into your project directory and use this code:
+Place [Linefont[wdth,wght].woff2](./fonts/variable/Linefont[wdth,wght].woff2) into your project directory and use this code:
 
 ```html
 <style>
