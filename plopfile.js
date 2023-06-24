@@ -1,7 +1,7 @@
 const dedent = require('dedent')
 const package = require('./package.json')
 
-const UPM = 2048
+const UPM = 1000
 
 // Core latin chars are 0
 // All other chars are blank via last-resort method, see cmap https://github.com/adobe-fonts/adobe-blank-vf
@@ -47,10 +47,10 @@ alias(52,'A'), alias(54,'B'), alias(56,'C'), alias(58,'D'), alias(60,'E'), alias
 
 // create masters
 const MASTERS = {
-  '0,0': { weight: AXES.weight.min, width: AXES.width.min},
-  '0,100': { weight: AXES.weight.min, width: AXES.width.max},
-  '100,0': { weight: AXES.weight.max, width: AXES.width.min},
-  '100,100': { weight: AXES.weight.max, width: AXES.width.max},
+  'min,min': { weight: AXES.weight.min, width: AXES.width.min},
+  'min,max': { weight: AXES.weight.min, width: AXES.width.max},
+  'max,min': { weight: AXES.weight.max, width: AXES.width.min},
+  'max,max': { weight: AXES.weight.max, width: AXES.width.max},
 }
 
 module.exports = function (plop) {
@@ -98,16 +98,16 @@ module.exports = function (plop) {
         data: { FONT, AXES, MASTERS, SPACE }
       },
       // populate masters
-        ...Object.keys(MASTERS).map(master).flat()
+        ...Object.keys(MASTERS).map(name => master({...MASTERS[name], name})).flat()
     ].flat()
 	});
 };
 
 
 // create actions to build one master file
-function master({width, weight}){
+function master({width, weight, name}){
   console.log('Building master ', weight, width)
-  const destination = `sources/Linefont[${weight},${width}].ufo`
+  const destination = `sources/Linefont[${name}].ufo`
 
   return [
     // populate ufo skeleton
@@ -136,7 +136,7 @@ function master({width, weight}){
       template: join({width, weight})
     },
     // value data points
-    ...values.map(({code, value}) => ({
+    ...FONT.values.map((code, value) => ({
       // verbose: false,
       force: true,
       type: 'add',
@@ -144,7 +144,7 @@ function master({width, weight}){
       template: sample({value, width, code})
     })),
     // all possible tangent values -100..100
-    ...values.map(({value, code}) => [
+    ...FONT.values.map((code, value) => [
       {
         // verbose: false,
         force: true,
@@ -203,7 +203,7 @@ const sample = ({value, width, weight, code}) => {
   return dedent`<?xml version="1.0" encoding="UTF-8"?>
     <glyph name="_" format="2">
       <advance width="${ width }"/>
-      ${code.map(code=>`<unicode hex="${hex(code)}"/>`).join('')}
+      <unicode hex="${hex(code)}"/>
       <outline>
       <component base="point" xOffset="${ width * .5 }" yOffset="${ (UPM*value/FONT.max).toFixed(0) }"/>
       </outline>

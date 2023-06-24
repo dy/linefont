@@ -7,12 +7,12 @@ feature mark {
   # define offsets
   # half-width is required to offset point position to the center of character
   {{#each FONT.values as |code value|}}
-  pos cursive _{{value}} <anchor NULL> <anchor {{../width}} {{upmValue}}>;
+  pos cursive _{{value}} <anchor NULL> <anchor {{../width}} {{upm value}}>;
   {{/each}}
 
   {{#each FONT.values as |code value|}}
-  pos cursive to{{value}} <anchor 0 0> <anchor {{../width}} {{upmValue}}>;
-  pos cursive to-{{value}} <anchor 0 0> <anchor {{../width}} -{{upmValue}}>;
+  pos cursive to{{value}} <anchor 0 0> <anchor {{../width}} {{upm value}}>;
+  pos cursive to-{{value}} <anchor 0 0> <anchor {{../width}} -{{upm value}}>;
   {{/each}}
 } mark;
 

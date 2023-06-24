@@ -7,8 +7,8 @@
 		<string>.notdef</string>
     <string>space</string>
     <string>join</string>
-    {{#each values}}
-    <string>_{{ this.value }}</string>
+    {{#each FONT.values as |code value|}}
+    <string>_{{ value }}</string>
     {{/each}}
 	</array>
 </dict>

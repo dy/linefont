@@ -4,9 +4,9 @@
         <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="width" tag="wdth"/>
         <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="weight" tag="wght"/>
     </axes>
-    <rules></rules>
+
     <sources>
-        {{#each masters as |master name| }}
+        {{#each MASTERS as |master name| }}
         <source familyname="Linefont" filename="Linefont[{{ name }}].ufo" name="Master_{{@index}}" stylename="Master {{@index}}">
             <location>
                 {{#each master as |axisValue axisId|}}
@@ -16,4 +16,35 @@
         </source>
         {{/each}}
     </sources>
+
+    <instances>
+        <instance filename="instance_ufo/Wavefont-Thin.ufo" name="Wavefont Thin" familyname="Wavefont" stylename="Thin">
+            <location>
+                <dimension name="Weight" xvalue="100" />
+                <dimension name="Roundness" xvalue="100" />
+                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Wavefont-ExtraLight.ufo" name="Wavefont ExtraLight" familyname="Wavefont" stylename="ExtraLight">
+            <location>
+                <dimension name="Weight" xvalue="200" />
+                <dimension name="Roundness" xvalue="100" />
+                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Wavefont-Light.ufo" name="Wavefont Light" familyname="Wavefont" stylename="Light">
+            <location>
+                <dimension name="Weight" xvalue="300" />
+                <dimension name="Roundness" xvalue="100" />
+                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Wavefont-Regular.ufo" name="Wavefont Regular" familyname="Wavefont" stylename="Regular">
+            <location>
+                <dimension name="Weight" xvalue="400" />
+                <dimension name="Roundness" xvalue="100" />
+                <dimension name="Vertical Element Alignment" xvalue="0.5" />
+            </location>
+        </instance>
+    </instances>
 </designspace>

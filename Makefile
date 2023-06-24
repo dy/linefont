@@ -14,14 +14,16 @@ node_modules: package.json
 	npm install
 
 template.stamp: _sources/master.ufo _sources/master.ufo/features.fea _sources/master.ufo/fontinfo.plist _sources/Linefont.designspace node_modules plopfile.js _sources/config.yaml
-	plop build-ufo
+	npx plop build-ufo
+	for file in sources/*.ufo; do \
+        ufonormalizer -a --float-precision 3 -m $$file; \
+	done
 	touch template.stamp
 
 build.stamp: venv template.stamp
 	. venv/bin/activate
-	for file in sources/*.ufo; do ufonormalizer -a --float-precision 3 -m $file; done
 	gftools builder sources/config.yaml
-	fonttools ttLib.woff2 compress ./fonts/variable/Linefont[wdth,wght].ttf -o ./fonts/variable/Linefont[wdth,wght].woff2
+	fonttools ttLib.woff2 compress ./fonts/variable/Linefont[wght,wdth].ttf -o ./fonts/variable/Linefont[wght,wdth].woff2
 	touch build.stamp
 
 venv: venv/touchfile
