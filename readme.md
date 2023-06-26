@@ -1,6 +1,7 @@
 # ∿ linefont [![build](https://github.com/dy/linefont/actions/workflows/build.yaml/badge.svg)](https://github.com/dy/linefont/actions/workflows/build.yaml)
 
 Typeface for rendering small/medium-scale line chart data.
+<img width="200" alt="image" src="https://github.com/dy/linefont/assets/300067/5e47c31f-08f1-4e29-8831-105ee75da599">
 
 [**Demo**](https://dy.github.io/linefont/scripts)&nbsp;&nbsp;•&nbsp;&nbsp;[**V-fonts**](https://v-fonts.com/fonts/linefont)&nbsp;&nbsp;•&nbsp;&nbsp;[**Test**](https://dy.github.io/linefont/out/fontbakery/fontbakery-report)
 
