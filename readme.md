@@ -17,7 +17,7 @@ Place [Linefont[wdth,wght].woff2](./fonts/variable/Linefont[wdth,wght].woff2) in
 	src: url(./Linefont[wdth,wght].woff2) format('woff2');
 }
 .linefont {
-	--wght: 10;
+	--wght: 200;
   --wdth: 50;
 	font-family: linefont;
 	font-variation-settings: 'wght' var(--wght), 'wdth' var(--wdth);
@@ -48,16 +48,9 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 Tag | Range | Default | Meaning
 ---|---|---|---
-`wght` | _5_-_100_ | 400 | Bar width, or boldness.
-`wdth` | _20_-_100_ | 20 | Width of the font (zoom of the signal).
+`wght` | _100_-_700_ | 400 | Line thickness.
+`wdth` | _25_-_100_ | 25 | Width of the font (ie. zoom of the signal).
 
-To adjust axes via CSS:
-
-```css
-.linefont {
-  font-variation-settings: 'wght' var(--wght, 50), 'wdth' var(--wdth, 200);
-}
-```
 
 ## Features
 
