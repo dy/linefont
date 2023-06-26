@@ -11,7 +11,7 @@ const SPACE = [0x09,0x0A,0x0B,0x0C,0x0D,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
 const AXES = {
   // NOTE: width comes first to be compat with gftools
   width: {name: 'Width', tag: 'wdth', min: 25, max: 100, default: 100},
-  weight: {name: 'Weight', tag: 'wght', min: 5, max: 140, mid: 54, default: 5,},
+  weight: {name: 'Weight', tag: 'wght', min: 5, max: 100, default: 100,},
 }
 
 const FONT = {
@@ -69,12 +69,7 @@ module.exports = function (plop) {
   plop.setHelper('upm', upm);
 
   // wght: 5 -> 100, 140 -> 700
-  plop.setHelper('wght', v => (
-    v < AXES.weight.mid ?
-      300 * (v - AXES.weight.min) / (AXES.weight.mid - AXES.weight.min) + 100 :
-      300 * (v - AXES.weight.max) / (AXES.weight.max - AXES.weight.mid) + 400
-    )
-  );
+  plop.setHelper('wght', v => v);
 
   // hex 12 -> C
   plop.setHelper('hex', hex);
