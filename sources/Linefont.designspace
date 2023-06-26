@@ -3,10 +3,7 @@
     <axes>
         <axis default="25" minimum="25" maximum="100" name="Width" tag="wdth">
         </axis>
-        <axis default="100" minimum="100" maximum="700" name="Weight" tag="wght">
-            <map input="100" output="5"/>
-            <map input="400" output="54"/>
-            <map input="700" output="140"/>
+        <axis default="5" minimum="5" maximum="100" name="Weight" tag="wght">
         </axis>
     </axes>
 
@@ -25,13 +22,13 @@
         </source>
         <source familyname="Linefont" filename="Linefont[max,min].ufo" name="Master_2" stylename="Master 2">
             <location>
-                <dimension name="Weight" xvalue="140" />
+                <dimension name="Weight" xvalue="100" />
                 <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,max].ufo" name="Master_3" stylename="Master 3">
             <location>
-                <dimension name="Weight" xvalue="140" />
+                <dimension name="Weight" xvalue="100" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </source>
