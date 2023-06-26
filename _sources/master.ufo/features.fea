@@ -1,5 +1,14 @@
 languagesystem DFLT dflt;
 
+table BASE {
+  HorizAxis.BaseTagList                 ideo;
+  HorizAxis.BaseScriptList  DFLT  ideo  0;
+
+  VertAxis.BaseTagList                  ideo;
+  VertAxis.BaseScriptList   DFLT  ideo     0;
+} BASE;
+
+
 feature mark {
   pos cursive point <anchor 0 0> <anchor 0 0>;
   pos cursive join <anchor 0 0> <anchor 0 0>;

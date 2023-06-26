@@ -46,7 +46,7 @@
     <integer>7</integer>
   </array>
   <key>openTypeOS2WeightClass</key>
-  <integer>{{ weight }}</integer>
+  <integer>{{wght weight }}</integer>
   <key>openTypeOS2Type</key>
   <array>
   </array>

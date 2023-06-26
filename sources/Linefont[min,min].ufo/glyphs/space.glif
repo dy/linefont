@@ -186,6 +186,13 @@
 	<unicode hex="200B"/>
 	<unicode hex="200C"/>
 	<unicode hex="200D"/>
+	<unicode hex="200E"/>
+	<unicode hex="200F"/>
+	<unicode hex="2010"/>
+	<unicode hex="2011"/>
+	<unicode hex="2012"/>
+	<unicode hex="2013"/>
+	<unicode hex="2014"/>
 	<unicode hex="2018"/>
 	<unicode hex="2019"/>
 	<unicode hex="201A"/>
@@ -207,6 +214,7 @@
 	<unicode hex="2122"/>
 	<unicode hex="2212"/>
 	<unicode hex="3000"/>
+	<unicode hex="030C"/>
 	<unicode hex="FEFF"/>
 	<advance width="25"/>
 </glyph>
