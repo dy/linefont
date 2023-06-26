@@ -2,12 +2,11 @@
 <designspace format="3">
     <axes>
         <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}">
-            <!-- <map input="-100" output="{{ AXES.width.min }}"/> -->
-            <!-- <map input="100" output="{{ AXES.width.max }}"/> -->
         </axis>
-        <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}">
-            <!-- <map input="-100" output="{{ AXES.weight.min }}"/> -->
-            <!-- <map input="100" output="{{ AXES.weight.max }}"/> -->
+        <axis default="100" minimum="100" maximum="700" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}">
+            <map input="100" output="{{ AXES.weight.min }}"/>
+            <map input="400" output="{{ AXES.weight.mid }}"/>
+            <map input="700" output="{{ AXES.weight.max }}"/>
         </axis>
     </axes>
 
