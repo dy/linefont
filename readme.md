@@ -2,7 +2,7 @@
 
 Typeface for rendering small/medium-scale line chart data.
 
-<img width="190" alt="image" src="https://github.com/dy/linefont/assets/300067/ddd54250-7cba-48dc-920e-5e81f1c52fdb">
+<img width="151" alt="image" src="https://github.com/dy/linefont/assets/300067/32827572-d01b-489e-b949-e1454640c3c9">
 
 [**Demo**](https://dy.github.io/linefont/scripts)&nbsp;&nbsp;•&nbsp;&nbsp;[**V-fonts**](https://v-fonts.com/fonts/linefont)&nbsp;&nbsp;•&nbsp;&nbsp;[**Test**](https://dy.github.io/linefont/out/fontbakery/fontbakery-report)
 
