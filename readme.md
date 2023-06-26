@@ -56,6 +56,8 @@ Tag | Range | Default | Meaning
 
 ## Features
 
+
+* Ranges are compatible with [wavefont](https://github.com/dy/wavefont), as well as _width_, so fonts can be swapped preserving visual consistency.
 * Visible charcodes fall under _marking characters_ unicode category, ie. recognized as word by regexp and can be selected with <kbd>Ctrl</kbd> + <kbd>→</kbd> or double click. Eg. segments separated by ` ` or `-` are selectable by double click.
 * Characters outside of visible ranges (but within Core Latin) are clipped to _0_, eg. ` `, `\t` etc.
 * Caret span is -20..120, so line-height = 1.4 is minimal non-overlapping selection.
