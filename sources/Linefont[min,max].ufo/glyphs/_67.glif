@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_" format="2">
 	<unicode hex="0143"/>
-	<advance width="500"/>
+	<advance width="100"/>
 	<outline>
-		<component base="point" xOffset="250" yOffset="670"/>
+		<component base="point" xOffset="50" yOffset="670"/>
 	</outline>
 </glyph>

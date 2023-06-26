@@ -1,33 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="10" minimum="10" maximum="500" name="Width" tag="wdth"/>
-        <axis default="1" minimum="1" maximum="400" name="Weight" tag="wght"/>
+        <axis default="25" minimum="25" maximum="100" name="Width" tag="wdth">
+        </axis>
+        <axis default="100" minimum="100" maximum="700" name="Weight" tag="wght">
+            <map input="100" output="5"/>
+            <map input="400" output="54"/>
+            <map input="700" output="140"/>
+        </axis>
     </axes>
 
     <sources>
         <source familyname="Linefont" filename="Linefont[min,min].ufo" name="Master_0" stylename="Master 0">
             <location>
-                <dimension name="Weight" xvalue="1" />
-                <dimension name="Width" xvalue="10" />
+                <dimension name="Weight" xvalue="5" />
+                <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,max].ufo" name="Master_1" stylename="Master 1">
             <location>
-                <dimension name="Weight" xvalue="1" />
-                <dimension name="Width" xvalue="500" />
+                <dimension name="Weight" xvalue="5" />
+                <dimension name="Width" xvalue="100" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,min].ufo" name="Master_2" stylename="Master 2">
             <location>
-                <dimension name="Weight" xvalue="400" />
-                <dimension name="Width" xvalue="10" />
+                <dimension name="Weight" xvalue="140" />
+                <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,max].ufo" name="Master_3" stylename="Master 3">
             <location>
-                <dimension name="Weight" xvalue="400" />
-                <dimension name="Width" xvalue="500" />
+                <dimension name="Weight" xvalue="140" />
+                <dimension name="Width" xvalue="100" />
             </location>
         </source>
     </sources>
