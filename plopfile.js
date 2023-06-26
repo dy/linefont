@@ -10,7 +10,7 @@ const SPACE = [0x09,0x0A,0x0B,0x0C,0x0D,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
 // axes definition, per https://github.com/dy/wavefont/issues/42
 const AXES = {
   // NOTE: width comes first to be compat with gftools
-  width: {name: 'Width', tag: 'wdth', min: 20, max: 100, default: 20},
+  width: {name: 'Width', tag: 'wdth', min: 25, max: 100, default: 100},
   weight: {name: 'Weight', tag: 'wght', min: 5, max: 100, default: 1},
 }
 
