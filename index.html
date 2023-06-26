@@ -66,7 +66,7 @@ a {
 }
 </style>
 
-<form id="panel" action="https://github.com/dy/linefont"  onclick="console.log(event.target, this), event.target === this && togglePanel()">
+<form id="panel" action="https://github.com/dy/linefont"  onclick="event.target === this && togglePanel()">
 
   <script>
     let toggle = localStorage.getItem('lf:panel-toggle')
@@ -228,21 +228,19 @@ a {
   }
 
 fontarea.innerHTML = [
-  ...sine(400, 64), null,
-  ...sine(400, 32), null,
-  ...sine(400, 16), null,
-  ...sine(400, 8), null,
-  ...sine(400, 4), null,
-  ...sine(400, 2), null,
-  ...sine(400, 1), null,
-
-  ...rect(400, 2), null,
-  ...rect(400, 4), null,
-  ...rect(400, 8), null,
-  ...rect(400, 16), null,
-  ...rect(400, 32), null,
-  ...rect(400, 64), null,
-
-  ...populate(1728)
+  ...populate(1728),
+  ...sine(200, 1),
+  ...sine(200, 2),
+  ...sine(200, 4),
+  ...sine(200, 8),
+  ...sine(200, 16),
+  ...sine(200, 32),
+  ...sine(200, 64),
+  ...rect(200, 2),
+  ...rect(200, 4),
+  ...rect(200, 8),
+  ...rect(200, 16),
+  ...rect(200, 32),
+  ...rect(200, 64)
 ].map(v => v == null ? '\n' : String.fromCharCode(0x0100 + v)).join('')
 </script>
