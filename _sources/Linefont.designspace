@@ -1,8 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}"/>
-        <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}"/>
+        <axis default="{{ AXES.width.min }}" minimum="{{ AXES.width.min }}" maximum="{{ AXES.width.max }}" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}">
+            <!-- <map input="-100" output="{{ AXES.width.min }}"/> -->
+            <!-- <map input="100" output="{{ AXES.width.max }}"/> -->
+        </axis>
+        <axis default="{{ AXES.weight.min }}" minimum="{{ AXES.weight.min }}" maximum="{{ AXES.weight.max }}" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}">
+            <!-- <map input="-100" output="{{ AXES.weight.min }}"/> -->
+            <!-- <map input="100" output="{{ AXES.weight.max }}"/> -->
+        </axis>
     </axes>
 
     <sources>

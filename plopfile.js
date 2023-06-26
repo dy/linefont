@@ -10,8 +10,8 @@ const SPACE = [0x09,0x0A,0x0B,0x0C,0x0D,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
 // axes definition, per https://github.com/dy/wavefont/issues/42
 const AXES = {
   // NOTE: width comes first to be compat with gftools
-  width: {name: 'Width', tag: 'wdth', min: 10, max: 500, default: 10},
-  weight: {name: 'Weight', tag: 'wght', min: 1, max: 400, default: 1},
+  width: {name: 'Width', tag: 'wdth', min: 20, max: 100, default: 20},
+  weight: {name: 'Weight', tag: 'wght', min: 5, max: 100, default: 1},
 }
 
 const FONT = {
@@ -121,7 +121,7 @@ function master({width, weight, name}){
       templateFiles: '_sources/master.ufo/**/*',
       data: { width, weight, AXES, FONT, SPACE }
     },
-    // data point component (unlike join, it is centered)
+    // point glyph or component (unlike join, it is centered)
     {
       // verbose: false,
       force: true,
@@ -144,7 +144,7 @@ function master({width, weight, name}){
       path: `${destination}/glyphs/${value}.glif`,
       template: sample({value, width, code, alias: FONT.alias[value]})
     })),
-    // all possible tangent values -100..100
+    // all possible tangent values (lines) -100..100
     ...FONT.values.map((code, value) => [
       {
         // verbose: false,
@@ -189,8 +189,8 @@ const point = ({width, weight}) => {
     </glyph>
   `
 }
-// point with line-specific advance/shift context
-const join = ({width,weight}) => {
+// point with line-specific advance/shift context (for subs)
+const join = ({width, weight}) => {
   return dedent`<?xml version="1.0" encoding="UTF-8"?>
     <glyph name="point" format="2">
       <advance width="${ 0 }"/>
@@ -199,7 +199,7 @@ const join = ({width,weight}) => {
   `
 }
 
-// glyps are not necessary to have content - it's done via subs
+// single value. glyps don't necessarily have content - it's done via subs
 const sample = ({value, width, weight, code, alias}) => {
   return dedent`<?xml version="1.0" encoding="UTF-8"?>
     <glyph name="_" format="2">
@@ -224,11 +224,13 @@ const line = ({value, width, weight}) => {
     <glyph name="to${value}" format="2">
       <advance width="${ width }"/>
       <outline>
+        <!--<component base="point" xOffset="${-width*.5}" yOffset="${0}"/>-->
+        <!--<component base="point" xOffset="${width*.5}" yOffset="${valueY}"/>-->
         <contour>
-          <point x="${ (-width*.5 - xShift).toFixed(0) }" y="${ yShift.toFixed(0) }" type="line"/>
-          <point x="${ (width*.5 - xShift).toFixed(0) }" y="${ (valueY + yShift).toFixed(0) }" type="line"/>
-          <point x="${ (width*.5 + xShift).toFixed(0) }" y="${ (valueY - yShift).toFixed(0) }" type="line"/>
-          <point x="${ (-width*.5 + xShift).toFixed(0) }" y="${ -yShift.toFixed(0) }" type="line"/>
+          <point x="${ (-width*.5 - xShift) }" y="${ yShift }" type="line"/>
+          <point x="${ (width*.5 - xShift) }" y="${ (valueY + yShift) }" type="line"/>
+          <point x="${ (width*.5 + xShift) }" y="${ (valueY - yShift) }" type="line"/>
+          <point x="${ (-width*.5 + xShift) }" y="${ -yShift }" type="line"/>
         </contour>
       </outline>
     </glyph>

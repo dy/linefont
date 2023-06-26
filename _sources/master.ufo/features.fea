@@ -22,11 +22,7 @@ feature mark {
 @value = [{{#each FONT.values as |code value|}}_{{ value }} {{/each}}];
 
 feature liga {
-  # TODO: Replace single values with joins
-  {{#each FONT.values as |code value|}}
-  # sub _{{value}} by _{{value}} join;
-  {{/each}}
-
+  # We replace single values with pair of lines
   # Reversesub is compact notation and has no overflow, compared to O(N²) pair subs
   # rsub ostensibly ignores final result of replacement and instead looks at the initial sequence
   # rsub _0 @value' by [to0 to1 to2 to3];
@@ -41,6 +37,8 @@ feature liga {
   {{/each}}
 
   # Append join after line - reduces size by 30% compared to TTF components in lines
+  # Also smoothes interpolated values a bit
+  # See https://github.com/dy/linefont/issues/7
   {{#each FONT.values as |code value|}}
   sub to{{value}} by to{{value}} join;
   sub to-{{value}} by to-{{value}} join;

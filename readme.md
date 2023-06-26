@@ -1,6 +1,6 @@
 # ∿ linefont [![build](https://github.com/dy/linefont/actions/workflows/build.yaml/badge.svg)](https://github.com/dy/linefont/actions/workflows/build.yaml)
 
-Typeface for rendering line chart data.
+Typeface for rendering small/medium-scale line chart data.
 
 [**Demo**](https://dy.github.io/linefont/scripts)&nbsp;&nbsp;•&nbsp;&nbsp;[**V-fonts**](https://v-fonts.com/fonts/linefont)&nbsp;&nbsp;•&nbsp;&nbsp;[**Test**](https://dy.github.io/linefont/out/fontbakery/fontbakery-report)
 
@@ -48,8 +48,8 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 Tag | Range | Default | Meaning
 ---|---|---|---
-`wght` | _1_-_400_ | 400 | Bar width, or boldness (in upm).
-`wdth` | _50_-_500_ | 500 | Width of the font (zoom of the signal).
+`wght` | _5_-_100_ | 400 | Bar width, or boldness.
+`wdth` | _20_-_100_ | 20 | Width of the font (zoom of the signal).
 
 To adjust axes via CSS:
 
