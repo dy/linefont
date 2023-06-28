@@ -48,10 +48,10 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 ## Variable Axes
 
-Tag | Range | Default | Meaning
----|---|---|---
-`wght` | _5_-_400_ | 400 | Line thickness.
-`wdth` | _25_-_200_ | 100 | Width of the font (ie. zoom of the signal).
+Tag | Range | Meaning
+---|---|---
+`wght` | _5_-_400_ | Line thickness.
+`wdth` | _25_-_200_ | Width of the font (ie. zoom of the signal).
 
 
 ## Features
