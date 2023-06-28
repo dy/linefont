@@ -3,8 +3,8 @@
 	<unicode hex="0150"/>
 	<unicode hex="0038"/>
 	<unicode hex="004F"/>
-	<advance width="100"/>
+	<advance width="200"/>
 	<outline>
-		<component base="point" xOffset="50" yOffset="800"/>
+		<component base="point" xOffset="100" yOffset="800"/>
 	</outline>
 </glyph>

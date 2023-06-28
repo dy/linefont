@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="to-125" format="2">
-	<advance width="100"/>
+	<advance width="200"/>
 	<outline>
 		<contour>
-			<point x="-47.508" y="0.199" type="line"/>
-			<point x="52.492" y="-1249.801" type="line"/>
-			<point x="47.508" y="-1250.199" type="line"/>
-			<point x="-52.492" y="-0.199" type="line"/>
+			<point x="-97.531" y="0.395" type="line"/>
+			<point x="102.469" y="-1249.605" type="line"/>
+			<point x="97.531" y="-1250.395" type="line"/>
+			<point x="-102.469" y="-0.395" type="line"/>
 		</contour>
 	</outline>
 </glyph>

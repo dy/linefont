@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="to-88" format="2">
+	<advance width="100"/>
+	<outline>
+		<contour>
+			<point x="148.721" y="22.582" type="line"/>
+			<point x="248.721" y="-857.418" type="line"/>
+			<point x="-148.721" y="-902.582" type="line"/>
+			<point x="-248.721" y="-22.582" type="line"/>
+		</contour>
+	</outline>
+</glyph>

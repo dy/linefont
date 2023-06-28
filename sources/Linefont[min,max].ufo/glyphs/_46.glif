@@ -2,8 +2,8 @@
 <glyph name="_" format="2">
 	<unicode hex="012E"/>
 	<unicode hex="0078"/>
-	<advance width="100"/>
+	<advance width="200"/>
 	<outline>
-		<component base="point" xOffset="50" yOffset="460"/>
+		<component base="point" xOffset="100" yOffset="460"/>
 	</outline>
 </glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_" format="2">
+	<unicode hex="0146"/>
+	<unicode hex="0037"/>
+	<unicode hex="004A"/>
+	<advance width="100"/>
+	<outline>
+		<component base="point" xOffset="50" yOffset="700"/>
+	</outline>
+</glyph>

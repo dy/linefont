@@ -216,5 +216,5 @@
 	<unicode hex="3000"/>
 	<unicode hex="030C"/>
 	<unicode hex="FEFF"/>
-	<advance width="100"/>
+	<advance width="200"/>
 </glyph>
