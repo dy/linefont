@@ -10,8 +10,8 @@ const SPACE = [0x09,0x0A,0x0B,0x0C,0x0D,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
 // axes definition, per https://github.com/dy/wavefont/issues/42
 const AXES = {
   // NOTE: width comes first to be compat with gftools
-  width: {name: 'Width', tag: 'wdth', min: 25, max: 100, default: 100},
-  weight: {name: 'Weight', tag: 'wght', min: 5, max: 100, default: 100,},
+  width: {name: 'Width', tag: 'wdth', min: 25, mid: 100, max: 200, default: 100},
+  weight: {name: 'Weight', tag: 'wght', min: 5, max: 400, default: 5},
 }
 
 const FONT = {
@@ -52,6 +52,11 @@ const MASTERS = {
   'min,max': { weight: AXES.weight.min, width: AXES.width.max},
   'max,min': { weight: AXES.weight.max, width: AXES.width.min},
   'max,max': { weight: AXES.weight.max, width: AXES.width.max},
+  // extra middle masters soften width interpolation
+  'min,low': { weight: AXES.weight.min, width: AXES.width.min*2},
+  'max,low': { weight: AXES.weight.max, width: AXES.width.min*2},
+  'min,mid': { weight: AXES.weight.min, width: AXES.width.mid},
+  'max,mid': { weight: AXES.weight.max, width: AXES.width.mid},
 }
 
 module.exports = function (plop) {
