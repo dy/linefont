@@ -1,6 +1,6 @@
 # linefont [![build](https://github.com/dy/linefont/actions/workflows/build.yaml/badge.svg)](https://github.com/dy/linefont/actions/workflows/build.yaml)
 
-Typeface for rendering small/medium-scale line chart data.
+Typeface for rendering small/medium-scale line charts (eg. time series).
 
 <img width="151" alt="image" src="https://github.com/dy/linefont/assets/300067/32827572-d01b-489e-b949-e1454640c3c9">
 
@@ -84,6 +84,6 @@ lf(0, 1, 50, 99, 127, ...) // ĀāĲţŤ...
 
 ## See also
 
-* [wavefont](https://github.com/dy/wavefont) − font-face for rendering linear data.
+* [wavefont](https://github.com/dy/wavefont) − font-face for rendering waveforms.
 
 <p align="center"><a href="https://github.com/krishnized/license/">🕉</a><p>
