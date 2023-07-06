@@ -41,8 +41,8 @@ linefont.textContent = Array.from({length: 127}, (_,i) => String.fromCharCode(0x
 
 Linefont values span from 0 to 100, assigned to different characters:
 
-* <kbd>0-9</kbd> chars for simplified manual input with step 10 (bar height = number).
-* <kbd>a-zA-Z</kbd> for manual input with step 2, softened at edges <kbd>a</kbd> and <kbd>Z</kbd> (bar height = number of letter).
+* <kbd>0-9</kbd> chars for simplified manual input with step 10 (height = number×10).
+* <kbd>a-zA-Z</kbd> for manual input with step 2, softened at edges <kbd>a</kbd> and <kbd>Z</kbd> (height = number of letter).
 * <kbd>U+0100-017F</kbd> for 0-127 values with step 1 (extra 27 values).
 
 
