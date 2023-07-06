@@ -6,7 +6,6 @@
         <axis default="100" minimum="100" maximum="900" name="{{ AXES.weight.name }}" tag="{{ AXES.weight.tag }}">
             <map input="100" output="{{ AXES.weight.min }}"/>
             <map input="400" output="54"/>
-            <map input="700" output="204"/>
             <map input="900" output="{{ AXES.weight.max }}"/>
         </axis>
     </axes>
@@ -26,19 +25,19 @@
     <instances>
         <instance filename="instance_ufo/Linefont-Thin.ufo" name="Linefont Thin" familyname="Linefont" stylename="Thin">
             <location>
-                <dimension name="Weight" xvalue="4" />
+                <dimension name="Weight" xvalue="5" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-ExtraLight.ufo" name="Linefont ExtraLight" familyname="Linefont" stylename="ExtraLight">
             <location>
-                <dimension name="Weight" xvalue="10" />
+                <dimension name="Weight" xvalue="16" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-Light.ufo" name="Linefont Light" familyname="Linefont" stylename="Light">
             <location>
-                <dimension name="Weight" xvalue="24" />
+                <dimension name="Weight" xvalue="33" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
@@ -50,31 +49,31 @@
         </instance>
         <instance filename="instance_ufo/Linefont-Medium.ufo" name="Linefont Medium" familyname="Linefont" stylename="Medium">
             <location>
-                <dimension name="Weight" xvalue="108" />
+                <dimension name="Weight" xvalue="75" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-SemiBold.ufo" name="Linefont SemiBold" familyname="Linefont" stylename="SemiBold">
             <location>
-                <dimension name="Weight" xvalue="160" />
+                <dimension name="Weight" xvalue="100" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-Bold.ufo" name="Linefont Bold" familyname="Linefont" stylename="Bold">
             <location>
-                <dimension name="Weight" xvalue="228" />
+                <dimension name="Weight" xvalue="128" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-ExtraBold.ufo" name="Linefont ExtraBold" familyname="Linefont" stylename="ExtraBold">
             <location>
-                <dimension name="Weight" xvalue="304" />
+                <dimension name="Weight" xvalue="160" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-Black.ufo" name="Linefont Black" familyname="Linefont" stylename="Black">
             <location>
-                <dimension name="Weight" xvalue="404" />
+                <dimension name="Weight" xvalue="200" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
