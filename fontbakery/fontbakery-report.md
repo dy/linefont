@@ -5,8 +5,8 @@ Fontbakery version: 0.8.13
 <details><summary><b>[8] Linefont-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -262,26 +262,20 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* _0 (U+0100): X=50.0,Y=2.0 (should be at baseline 0?)
-
-	* _0 (U+0100): X=50.0,Y=2.0 (should be at cap-height 0?)
-
 	* _0 (U+0100): X=50.0,Y=-2.0 (should be at baseline 0?)
 
-	* _0 (U+0100): X=50.0,Y=-2.0 (should be at cap-height 0?)
-
-	* _120 (U+0178): X=50.0,Y=1202.0 (should be at ascender 1200?) 
+	* _0 (U+0100): X=50.0,Y=-2.0 (should be at cap-height 0?) 
 
 	* _120 (U+0178): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
 </div></details><br></div></details><details><summary><b>[8] Linefont-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
-* 🔥 **FAIL** Best SubFamily name is 'SemiBold'. Expected OS/2 usWeightClass is 600, got 612. [code: bad-value]
+* 🔥 **FAIL** Best SubFamily name is 'SemiBold'. Expected OS/2 usWeightClass is 600, got 557. [code: bad-value]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -535,12 +529,12 @@ The following glyphs do not have the recommended number of contours:
 </div></details><br></div></details><details><summary><b>[9] Linefont-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
-* 🔥 **FAIL** Best SubFamily name is 'Medium'. Expected OS/2 usWeightClass is 500, got 508. [code: bad-value]
+* 🔥 **FAIL** Best SubFamily name is 'Medium'. Expected OS/2 usWeightClass is 500, got 471. [code: bad-value]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -796,38 +790,16 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* _4 (U+0063): X=88.0,Y=2.0 (should be at baseline 0?)
-
-	* _4 (U+0063): X=88.0,Y=2.0 (should be at cap-height 0?)
-
-	* _4 (U+0063): X=12.0,Y=2.0 (should be at baseline 0?)
-
-	* _4 (U+0063): X=12.0,Y=2.0 (should be at cap-height 0?)
-
-	* _4 (U+0104): X=88.0,Y=2.0 (should be at baseline 0?)
-
-	* _4 (U+0104): X=88.0,Y=2.0 (should be at cap-height 0?)
-
-	* _4 (U+0104): X=12.0,Y=2.0 (should be at baseline 0?)
-
-	* _4 (U+0104): X=12.0,Y=2.0 (should be at cap-height 0?)
-
-	* _116 (U+0174): X=12.0,Y=1198.0 (should be at ascender 1200?)
-
-	* _116 (U+0174): X=88.0,Y=1198.0 (should be at ascender 1200?)
-
-	* _124 (U+017C): X=88.0,Y=1202.0 (should be at ascender 1200?) 
-
-	* _124 (U+017C): X=12.0,Y=1202.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[8] Linefont-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+	* _116 (U+0174): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
+</div></details><br></div></details><details><summary><b>[9] Linefont-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
-* 🔥 **FAIL** Best SubFamily name is 'ExtraLight'. Expected OS/2 usWeightClass is 200, got 136. [code: bad-value]
+* 🔥 **FAIL** Best SubFamily name is 'ExtraLight'. Expected OS/2 usWeightClass is 200, got 167. [code: bad-value]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -1078,11 +1050,31 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _126	Contours detected: 1	Expected: 2
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* _1 (U+0030): X=50.0,Y=2.0 (should be at baseline 0?)
+
+	* _1 (U+0030): X=50.0,Y=2.0 (should be at cap-height 0?)
+
+	* _1 (U+0061): X=50.0,Y=2.0 (should be at baseline 0?)
+
+	* _1 (U+0061): X=50.0,Y=2.0 (should be at cap-height 0?)
+
+	* _1 (U+0101): X=50.0,Y=2.0 (should be at baseline 0?)
+
+	* _1 (U+0101): X=50.0,Y=2.0 (should be at cap-height 0?)
+
+	* _119 (U+0177): X=50.0,Y=1198.0 (should be at ascender 1200?) 
+
+	* _121 (U+0179): X=50.0,Y=1202.0 (should be at ascender 1200?) [code: found-misalignments]
 </div></details><br></div></details><details><summary><b>[8] Linefont-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -1361,15 +1353,15 @@ The following glyphs do not have the recommended number of contours:
 	* _122 (U+017A): X=69.0,Y=1201.0 (should be at ascender 1200?) 
 
 	* _122 (U+017A): X=31.0,Y=1201.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[9] Linefont-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] Linefont-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
-* 🔥 **FAIL** Best SubFamily name is 'Bold'. Expected OS/2 usWeightClass is 700, got 724. [code: bad-value]
+* 🔥 **FAIL** Best SubFamily name is 'Bold'. Expected OS/2 usWeightClass is 700, got 653. [code: bad-value]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -1620,43 +1612,15 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _126	Contours detected: 1	Expected: 2
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] Linefont-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* _10 (U+0031): X=107.0,Y=1.5 (should be at baseline 0?)
-
-	* _10 (U+0031): X=107.0,Y=1.5 (should be at cap-height 0?)
-
-	* _10 (U+0031): X=-7.0,Y=1.5 (should be at baseline 0?)
-
-	* _10 (U+0031): X=-7.0,Y=1.5 (should be at cap-height 0?)
-
-	* _10 (U+0066): X=107.0,Y=1.5 (should be at baseline 0?)
-
-	* _10 (U+0066): X=107.0,Y=1.5 (should be at cap-height 0?)
-
-	* _10 (U+0066): X=-7.0,Y=1.5 (should be at baseline 0?)
-
-	* _10 (U+0066): X=-7.0,Y=1.5 (should be at cap-height 0?)
-
-	* _10 (U+010A): X=107.0,Y=1.5 (should be at baseline 0?)
-
-	* _10 (U+010A): X=107.0,Y=1.5 (should be at cap-height 0?)
-
-	* _10 (U+010A): X=-7.0,Y=1.5 (should be at baseline 0?)
-
-	* _10 (U+010A): X=-7.0,Y=1.5 (should be at cap-height 0?)
-
-	* _110 (U+016E): X=-7.0,Y=1198.5 (should be at ascender 1200?) 
-
-	* _110 (U+016E): X=107.0,Y=1198.5 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[8] Linefont-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+* 🔥 **FAIL** Best SubFamily name is 'ExtraBold'. Expected OS/2 usWeightClass is 800, got 763. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -1907,37 +1871,15 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _126	Contours detected: 1	Expected: 2
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* _13 (U+010D): X=126.5,Y=-1.5 (should be at baseline 0?)
-
-	* _13 (U+010D): X=126.5,Y=-1.5 (should be at cap-height 0?)
-
-	* _13 (U+010D): X=-26.5,Y=-1.5 (should be at baseline 0?)
-
-	* _13 (U+010D): X=-26.5,Y=-1.5 (should be at cap-height 0?)
-
-	* _15 (U+010F): X=50.0,Y=-2.0 (should be at baseline 0?)
-
-	* _15 (U+010F): X=50.0,Y=-2.0 (should be at cap-height 0?)
-
-	* _105 (U+0169): X=50.0,Y=1202.0 (should be at ascender 1200?)
-
-	* _107 (U+016B): X=-26.5,Y=1201.5 (should be at ascender 1200?) 
-
-	* _107 (U+016B): X=126.5,Y=1201.5 (should be at ascender 1200?) [code: found-misalignments]
 </div></details><br></div></details><details><summary><b>[9] Linefont-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
-* 🔥 **FAIL** Best SubFamily name is 'Light'. Expected OS/2 usWeightClass is 300, got 220. [code: bad-value]
+* 🔥 **FAIL** Best SubFamily name is 'Light'. Expected OS/2 usWeightClass is 300, got 271. [code: bad-value]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -2193,26 +2135,42 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* _1 (U+0030): X=50.0,Y=-2.0 (should be at baseline 0?)
+	* _1 (U+0030): X=62.0,Y=-1.5 (should be at baseline 0?)
 
-	* _1 (U+0030): X=50.0,Y=-2.0 (should be at cap-height 0?)
+	* _1 (U+0030): X=62.0,Y=-1.5 (should be at cap-height 0?)
 
-	* _1 (U+0061): X=50.0,Y=-2.0 (should be at baseline 0?)
+	* _1 (U+0030): X=38.5,Y=-1.5 (should be at baseline 0?)
 
-	* _1 (U+0061): X=50.0,Y=-2.0 (should be at cap-height 0?)
+	* _1 (U+0030): X=38.5,Y=-1.5 (should be at cap-height 0?)
 
-	* _1 (U+0101): X=50.0,Y=-2.0 (should be at baseline 0?)
+	* _1 (U+0061): X=62.0,Y=-1.5 (should be at baseline 0?)
 
-	* _1 (U+0101): X=50.0,Y=-2.0 (should be at cap-height 0?)
+	* _1 (U+0061): X=62.0,Y=-1.5 (should be at cap-height 0?)
 
-	* _119 (U+0177): X=50.0,Y=1202.0 (should be at ascender 1200?) 
+	* _1 (U+0061): X=38.5,Y=-1.5 (should be at baseline 0?)
 
-	* _121 (U+0179): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
+	* _1 (U+0061): X=38.5,Y=-1.5 (should be at cap-height 0?)
+
+	* _1 (U+0101): X=62.0,Y=-1.5 (should be at baseline 0?)
+
+	* _1 (U+0101): X=62.0,Y=-1.5 (should be at cap-height 0?)
+
+	* _1 (U+0101): X=38.5,Y=-1.5 (should be at baseline 0?)
+
+	* _1 (U+0101): X=38.5,Y=-1.5 (should be at cap-height 0?)
+
+	* _119 (U+0177): X=38.5,Y=1202.0 (should be at ascender 1200?)
+
+	* _119 (U+0177): X=62.0,Y=1202.0 (should be at ascender 1200?)
+
+	* _121 (U+0179): X=62.0,Y=1198.5 (should be at ascender 1200?) 
+
+	* _121 (U+0179): X=38.5,Y=1198.5 (should be at ascender 1200?) [code: found-misalignments]
 </div></details><br></div></details><details><summary><b>[8] Linefont-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1472, but got 1200 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1286, but got 200 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
 
 
@@ -2468,58 +2426,28 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* _10 (U+0031): X=224.5,Y=-1.5 (should be at baseline 0?)
+	* _7 (U+0107): X=120.5,Y=-0.5 (should be at baseline 0?)
 
-	* _10 (U+0031): X=224.5,Y=-1.5 (should be at cap-height 0?)
+	* _7 (U+0107): X=120.5,Y=-0.5 (should be at cap-height 0?)
 
-	* _10 (U+0031): X=-124.5,Y=-1.5 (should be at baseline 0?)
+	* _7 (U+0107): X=-20.5,Y=-0.5 (should be at baseline 0?)
 
-	* _10 (U+0031): X=-124.5,Y=-1.5 (should be at cap-height 0?)
+	* _7 (U+0107): X=-20.5,Y=-0.5 (should be at cap-height 0?)
 
-	* _20 (U+0032): X=50.0,Y=-2.0 (should be at baseline 0?)
+	* _113 (U+0171): X=-20.5,Y=1200.5 (should be at ascender 1200?)
 
-	* _20 (U+0032): X=50.0,Y=-2.0 (should be at cap-height 0?)
+	* _113 (U+0171): X=120.5,Y=1200.5 (should be at ascender 1200?)
 
-	* _100 (U+005A): X=50.0,Y=1202.0 (should be at ascender 1200?)
+	* _127 (U+017F): X=120.5,Y=1199.5 (should be at ascender 1200?) 
 
-	* _10 (U+0066): X=224.5,Y=-1.5 (should be at baseline 0?)
-
-	* _10 (U+0066): X=224.5,Y=-1.5 (should be at cap-height 0?)
-
-	* _10 (U+0066): X=-124.5,Y=-1.5 (should be at baseline 0?)
-
-	* _10 (U+0066): X=-124.5,Y=-1.5 (should be at cap-height 0?)
-
-	* _20 (U+006B): X=50.0,Y=-2.0 (should be at baseline 0?)
-
-	* _20 (U+006B): X=50.0,Y=-2.0 (should be at cap-height 0?)
-
-	* _0 (U+0100): X=50.0,Y=-202.0 (should be at descender -200?)
-
-	* _10 (U+010A): X=224.5,Y=-1.5 (should be at baseline 0?)
-
-	* _10 (U+010A): X=224.5,Y=-1.5 (should be at cap-height 0?)
-
-	* _10 (U+010A): X=-124.5,Y=-1.5 (should be at baseline 0?)
-
-	* _10 (U+010A): X=-124.5,Y=-1.5 (should be at cap-height 0?)
-
-	* _20 (U+0114): X=50.0,Y=-2.0 (should be at baseline 0?)
-
-	* _20 (U+0114): X=50.0,Y=-2.0 (should be at cap-height 0?)
-
-	* _100 (U+0164): X=50.0,Y=1202.0 (should be at ascender 1200?)
-
-	* _110 (U+016E): X=-124.5,Y=1201.5 (should be at ascender 1200?) 
-
-	* _110 (U+016E): X=224.5,Y=1201.5 (should be at ascender 1200?) [code: found-misalignments]
+	* _127 (U+017F): X=-20.5,Y=1199.5 (should be at ascender 1200?) [code: found-misalignments]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 41 | 34 | 1118 | 55 | 830 | 0 |
+| 0 | 42 | 33 | 1118 | 55 | 830 | 0 |
 | 0% | 2% | 2% | 54% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
