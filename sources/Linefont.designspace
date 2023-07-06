@@ -3,56 +3,60 @@
     <axes>
         <axis default="25" minimum="25" maximum="200" name="Width" tag="wdth">
         </axis>
-        <axis default="5" minimum="5" maximum="400" name="Weight" tag="wght">
+        <axis default="100" minimum="100" maximum="900" name="Weight" tag="wght">
+            <map input="100" output="4"/>
+            <map input="400" output="54"/>
+            <map input="700" output="204"/>
+            <map input="900" output="404"/>
         </axis>
     </axes>
 
     <sources>
         <source familyname="Linefont" filename="Linefont[min,min].ufo" name="Master_0" stylename="Master 0">
             <location>
-                <dimension name="Weight" xvalue="5" />
+                <dimension name="Weight" xvalue="4" />
                 <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,max].ufo" name="Master_1" stylename="Master 1">
             <location>
-                <dimension name="Weight" xvalue="5" />
+                <dimension name="Weight" xvalue="4" />
                 <dimension name="Width" xvalue="200" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,min].ufo" name="Master_2" stylename="Master 2">
             <location>
-                <dimension name="Weight" xvalue="400" />
+                <dimension name="Weight" xvalue="404" />
                 <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,max].ufo" name="Master_3" stylename="Master 3">
             <location>
-                <dimension name="Weight" xvalue="400" />
+                <dimension name="Weight" xvalue="404" />
                 <dimension name="Width" xvalue="200" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,low].ufo" name="Master_4" stylename="Master 4">
             <location>
-                <dimension name="Weight" xvalue="5" />
+                <dimension name="Weight" xvalue="4" />
                 <dimension name="Width" xvalue="50" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,low].ufo" name="Master_5" stylename="Master 5">
             <location>
-                <dimension name="Weight" xvalue="400" />
+                <dimension name="Weight" xvalue="404" />
                 <dimension name="Width" xvalue="50" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,mid].ufo" name="Master_6" stylename="Master 6">
             <location>
-                <dimension name="Weight" xvalue="5" />
+                <dimension name="Weight" xvalue="4" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,mid].ufo" name="Master_7" stylename="Master 7">
             <location>
-                <dimension name="Weight" xvalue="400" />
+                <dimension name="Weight" xvalue="404" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </source>
@@ -61,19 +65,55 @@
     <instances>
         <instance filename="instance_ufo/Linefont-Thin.ufo" name="Linefont Thin" familyname="Linefont" stylename="Thin">
             <location>
-                <dimension name="Weight" xvalue="100" />
+                <dimension name="Weight" xvalue="5" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-ExtraLight.ufo" name="Linefont ExtraLight" familyname="Linefont" stylename="ExtraLight">
             <location>
-                <dimension name="Weight" xvalue="200" />
+                <dimension name="Weight" xvalue="55" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
         <instance filename="instance_ufo/Linefont-Light.ufo" name="Linefont Light" familyname="Linefont" stylename="Light">
             <location>
-                <dimension name="Weight" xvalue="300" />
+                <dimension name="Weight" xvalue="105" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-Regular.ufo" name="Linefont Regular" familyname="Linefont" stylename="Regular">
+            <location>
+                <dimension name="Weight" xvalue="155" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-Medium.ufo" name="Linefont Medium" familyname="Linefont" stylename="Medium">
+            <location>
+                <dimension name="Weight" xvalue="205" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-SemiBold.ufo" name="Linefont SemiBold" familyname="Linefont" stylename="SemiBold">
+            <location>
+                <dimension name="Weight" xvalue="255" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-Bold.ufo" name="Linefont Bold" familyname="Linefont" stylename="Bold">
+            <location>
+                <dimension name="Weight" xvalue="305" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-ExtraBold.ufo" name="Linefont ExtraBold" familyname="Linefont" stylename="ExtraBold">
+            <location>
+                <dimension name="Weight" xvalue="355" />
+                <dimension name="Width" xvalue="100" />
+            </location>
+        </instance>
+        <instance filename="instance_ufo/Linefont-Black.ufo" name="Linefont Black" familyname="Linefont" stylename="Black">
+            <location>
+                <dimension name="Weight" xvalue="405" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
