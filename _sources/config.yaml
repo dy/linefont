@@ -12,7 +12,7 @@ stat:
     tag: wdth
     values:
     - name: Default
-      value: {{ AXES.width.default }}
+      value: 100
       flags: 2
   - name: Weight
     tag: wght
@@ -25,4 +25,14 @@ stat:
       value: 300
     - name: Regular
       value: 400
+    - name: Medium
+      value: 500
+    - name: SemiBold
+      value: 600
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800
+    - name: Black
+      value: 900
       flags: 2

@@ -10,8 +10,22 @@ const SPACE = [0x09,0x0A,0x0B,0x0C,0x0D,0x20,0x21,0x22,0x23,0x24,0x25,0x26,0x27,
 // axes definition, per https://github.com/dy/wavefont/issues/42
 const AXES = {
   // NOTE: width comes first to be compat with gftools
-  width: {name: 'Width', tag: 'wdth', min: 25, mid: 100, max: 200, default: 100},
-  weight: {name: 'Weight', tag: 'wght', min: 5, max: 400, default: 5},
+  width: {name: 'Width', tag: 'wdth', min: 25, mid: 100, max: 200},
+  weight: {name: 'Weight', tag: 'wght', min: 5, max: 405, default: 5},
+}
+
+// create masters [weight,width]
+const MASTERS = {
+  'min,min': { weight: AXES.weight.min, width: AXES.width.min},
+  'min,max': { weight: AXES.weight.min, width: AXES.width.max},
+  'max,min': { weight: AXES.weight.max, width: AXES.width.min},
+  'max,max': { weight: AXES.weight.max, width: AXES.width.max},
+
+  // extra middle masters soften width interpolation
+  'min,low': { weight: AXES.weight.min, width: AXES.width.min*2},
+  'max,low': { weight: AXES.weight.max, width: AXES.width.min*2},
+  'min,mid': { weight: AXES.weight.min, width: AXES.width.mid},
+  'max,mid': { weight: AXES.weight.max, width: AXES.width.mid},
 }
 
 const FONT = {
@@ -45,19 +59,6 @@ alias(42,'v'), alias(44,'w'), alias(46,'x')
 alias(48,'y'), alias(50,'z')
 alias(52,'A'), alias(54,'B'), alias(56,'C'), alias(58,'D'), alias(60,'E'), alias(62,'F'), alias(64,'G'), alias(66,'H'), alias(68,'I'), alias(70,'J'), alias(72,'K'), alias(74,'L'), alias(76,'M'), alias(78,'N'), alias(80,'O'), alias(82,'P'), alias(84,'Q'), alias(86,'R'), alias(88,'S'), alias(90,'T'), alias(92,'U'), alias(94,'V'), alias(96,'W'), alias(98,'X'), alias(99,'Y'), alias(100,'Z')
 
-
-// create masters
-const MASTERS = {
-  'min,min': { weight: AXES.weight.min, width: AXES.width.min},
-  'min,max': { weight: AXES.weight.min, width: AXES.width.max},
-  'max,min': { weight: AXES.weight.max, width: AXES.width.min},
-  'max,max': { weight: AXES.weight.max, width: AXES.width.max},
-  // extra middle masters soften width interpolation
-  'min,low': { weight: AXES.weight.min, width: AXES.width.min*2},
-  'max,low': { weight: AXES.weight.max, width: AXES.width.min*2},
-  'min,mid': { weight: AXES.weight.min, width: AXES.width.mid},
-  'max,mid': { weight: AXES.weight.max, width: AXES.width.mid},
-}
 
 module.exports = function (plop) {
   // convert value to units-per-em (0-100 → 0-upm)
@@ -107,7 +108,7 @@ module.exports = function (plop) {
         data: { FONT, AXES, MASTERS, SPACE }
       },
       // populate masters
-        ...Object.keys(MASTERS).map(name => master({...MASTERS[name], name})).flat()
+      ...Object.keys(MASTERS).map(name => master({...MASTERS[name], name})).flat()
     ].flat()
 	});
 };
