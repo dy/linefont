@@ -100,7 +100,7 @@
         </instance>
         <instance filename="instance_ufo/Linefont-Bold.ufo" name="Linefont Bold" familyname="Linefont" stylename="Bold">
             <location>
-                <dimension name="Weight" xvalue="125" />
+                <dimension name="Weight" xvalue="128" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </instance>
