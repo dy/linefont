@@ -9,7 +9,7 @@ Typeface for rendering small/medium-scale line chart data.
 
 ## Usage
 
-Place [Linefont[wdth,wght].woff2](./fonts/variable/Linefont[wdth,wght].woff2) into your project directory and use this code:
+Put [Linefont[wdth,wght].woff2](./fonts/variable/Linefont[wdth,wght].woff2) into your project directory and use this code:
 
 ```html
 <style>
@@ -20,7 +20,7 @@ Place [Linefont[wdth,wght].woff2](./fonts/variable/Linefont[wdth,wght].woff2) in
 }
 .linefont {
 	--wght: 200;
-  --wdth: 50;
+	--wdth: 50;
 	font-family: linefont;
 	font-variation-settings: 'wght' var(--wght), 'wdth' var(--wdth);
 }
