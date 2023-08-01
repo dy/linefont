@@ -11,7 +11,7 @@
 		<key>descender</key>
 		<integer>-200</integer>
 		<key>familyName</key>
-		<string>Linefont</string>
+		<string>Linefont SuperCondensed</string>
 		<key>openTypeHheaAscender</key>
 		<integer>1200</integer>
 		<key>openTypeHheaCaretOffset</key>
@@ -59,9 +59,9 @@
 		<key>openTypeOS2WinDescent</key>
 		<integer>200</integer>
 		<key>postscriptFontName</key>
-		<string>Linefont-Thin</string>
+		<string>LinefontSuperCondensed-Thin</string>
 		<key>postscriptFullName</key>
-		<string>Linefont Thin</string>
+		<string>Linefont SuperCondensed Thin</string>
 		<key>postscriptIsFixedPitch</key>
 		<true/>
 		<key>postscriptUnderlinePosition</key>
