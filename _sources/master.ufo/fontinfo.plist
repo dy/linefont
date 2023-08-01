@@ -3,13 +3,13 @@
 <plist version="1.0">
   <dict>
   <key>familyName</key>
-  <string>Linefont SuperCondensed</string>
+  <string>Linefont</string>
   <key>styleName</key>
   <string>Thin</string>
   <key>postscriptFontName</key>
-  <string>LinefontSuperCondensed-Thin</string>
+  <string>Linefont-Thin</string>
   <key>postscriptFullName</key>
-  <string>Linefont SuperCondensed Thin</string>
+  <string>Linefont Thin</string>
   <key>postscriptWeightName</key>
   <string>Thin</string>
   <key>versionMajor</key>
