@@ -1,5 +1,5 @@
 gftools>=0.9.33
 ufonormalizer>=0.6
 fontbakery>=0.8.11
-fonttools
+fonttools>=4.42.1
 diffenator2>=0.2.7

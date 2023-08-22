@@ -1,0 +1,22 @@
+# Rules
+
+rule proofing
+  command = _diffbrowsers proof $fonts -s $styles -o $out -pt $pt_size -ch $
+      "$characters" --filter-styles "$filters"
+
+# Build rules
+build out/proof/ExtraBold: proofing
+  fonts = "/Users/div/projects/linefont/fonts/ttf/Linefont-ExtraLight.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-Light.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-Regular.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-Medium.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-Thin.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-Bold.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-SemiBold.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-Black.ttf" $
+      "/Users/div/projects/linefont/fonts/ttf/Linefont-ExtraBold.ttf"
+  styles = instances
+  out = out/diffbrowsers
+  pt_size = 20
+  characters = .*
+  filters = ExtraBold
