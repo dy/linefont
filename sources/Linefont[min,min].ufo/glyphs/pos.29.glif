@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="pos.29" format="2">
+	<advance width="25"/>
+	<outline>
+		<contour>
+			<point x="-14.991" y="0.215" type="line"/>
+			<point x="10.009" y="290.215" type="line"/>
+			<point x="14.991" y="289.785" type="line"/>
+			<point x="-10.009" y="-0.215" type="line"/>
+		</contour>
+	</outline>
+</glyph>

@@ -2,386 +2,386 @@
 space space u0009,u000A,u000B,u000C,u000D,u0020,u0021,u0022,u0023,u0024,u0025,u0026,u0027,u0028,u0029,u002A,u002B,u002C,u002D,u002E,u002F,u003A,u003B,u003C,u003D,u003E,u003F,u0040,u005B,u005C,u005D,u005E,u005F,u0060,u007B,u007C,u007D,u007E,u0085,u00A0,u00A1,u00A2,u00A3,u00A5,u00A7,u00A8,u00A9,u00AA,u00AB,u00AE,u00AF,u00B0,u00B4,u00B6,u00B7,u00B8,u00BA,u00BB,u00BF,u00C0,u00C1,u00C2,u00C3,u00C4,u00C5,u00C6,u00C7,u00C8,u00C9,u00CA,u00CB,u00CC,u00CD,u00CE,u00CF,u00D0,u00D1,u00D2,u00D3,u00D4,u00D5,u00D6,u00D7,u00D8,u00D9,u00DA,u00DB,u00DC,u00DD,u00DE,u00DF,u00E0,u00E1,u00E2,u00E3,u00E4,u00E5,u00E6,u00E7,u00E8,u00E9,u00EA,u00EB,u00EC,u00ED,u00EE,u00EF,u00F0,u00F1,u00F2,u00F3,u00F4,u00F5,u00F6,u00F7,u00F8,u00F9,u00FA,u00FB,u00FC,u00FD,u00FE,u00FF,u0180,u0181,u0182,u0183,u0184,u0185,u0186,u0187,u0188,u0218,u0219,u021A,u021B,u0237,u02C6,u02C7,u02D8,u02D9,u02DA,u02DB,u02DC,u02DD,u0300,u0301,u0302,u0303,u0304,u0305,u0306,u0307,u0308,u0309,u030A,u030B,u0312,u0326,u0327,u0328,u1680,u180E,u1E80,u1E81,u1E82,u1E83,u1E84,u1E85,u1E9E,u1EF2,u1EF3,u2000,u2001,u2002,u2003,u2004,u2005,u2006,u2007,u2008,u2009,u200A,u200B,u200C,u200D,u200E,u200F,u2010,u2011,u2012,u2013,u2014,u2018,u2019,u201A,u201C,u201D,u201E,u2022,u2026,u2028,u2029,u202F,u2039,u203A,u205F,u2060,u2061,u2062,u20AC,u2122,u2212,u3000,u030C,uFEFF
 
 _0 _0 u0100
-to0 to0
-to-0 to-0
+pos.0 pos.0
+neg.0 neg.0
 _1 _1 u0101
-to1 to1
-to-1 to-1
+pos.1 pos.1
+neg.1 neg.1
 _2 _2 u0102
-to2 to2
-to-2 to-2
+pos.2 pos.2
+neg.2 neg.2
 _3 _3 u0103
-to3 to3
-to-3 to-3
+pos.3 pos.3
+neg.3 neg.3
 _4 _4 u0104
-to4 to4
-to-4 to-4
+pos.4 pos.4
+neg.4 neg.4
 _5 _5 u0105
-to5 to5
-to-5 to-5
+pos.5 pos.5
+neg.5 neg.5
 _6 _6 u0106
-to6 to6
-to-6 to-6
+pos.6 pos.6
+neg.6 neg.6
 _7 _7 u0107
-to7 to7
-to-7 to-7
+pos.7 pos.7
+neg.7 neg.7
 _8 _8 u0108
-to8 to8
-to-8 to-8
+pos.8 pos.8
+neg.8 neg.8
 _9 _9 u0109
-to9 to9
-to-9 to-9
+pos.9 pos.9
+neg.9 neg.9
 _10 _10 u010A
-to10 to10
-to-10 to-10
+pos.10 pos.10
+neg.10 neg.10
 _11 _11 u010B
-to11 to11
-to-11 to-11
+pos.11 pos.11
+neg.11 neg.11
 _12 _12 u010C
-to12 to12
-to-12 to-12
+pos.12 pos.12
+neg.12 neg.12
 _13 _13 u010D
-to13 to13
-to-13 to-13
+pos.13 pos.13
+neg.13 neg.13
 _14 _14 u010E
-to14 to14
-to-14 to-14
+pos.14 pos.14
+neg.14 neg.14
 _15 _15 u010F
-to15 to15
-to-15 to-15
+pos.15 pos.15
+neg.15 neg.15
 _16 _16 u0110
-to16 to16
-to-16 to-16
+pos.16 pos.16
+neg.16 neg.16
 _17 _17 u0111
-to17 to17
-to-17 to-17
+pos.17 pos.17
+neg.17 neg.17
 _18 _18 u0112
-to18 to18
-to-18 to-18
+pos.18 pos.18
+neg.18 neg.18
 _19 _19 u0113
-to19 to19
-to-19 to-19
+pos.19 pos.19
+neg.19 neg.19
 _20 _20 u0114
-to20 to20
-to-20 to-20
+pos.20 pos.20
+neg.20 neg.20
 _21 _21 u0115
-to21 to21
-to-21 to-21
+pos.21 pos.21
+neg.21 neg.21
 _22 _22 u0116
-to22 to22
-to-22 to-22
+pos.22 pos.22
+neg.22 neg.22
 _23 _23 u0117
-to23 to23
-to-23 to-23
+pos.23 pos.23
+neg.23 neg.23
 _24 _24 u0118
-to24 to24
-to-24 to-24
+pos.24 pos.24
+neg.24 neg.24
 _25 _25 u0119
-to25 to25
-to-25 to-25
+pos.25 pos.25
+neg.25 neg.25
 _26 _26 u011A
-to26 to26
-to-26 to-26
+pos.26 pos.26
+neg.26 neg.26
 _27 _27 u011B
-to27 to27
-to-27 to-27
+pos.27 pos.27
+neg.27 neg.27
 _28 _28 u011C
-to28 to28
-to-28 to-28
+pos.28 pos.28
+neg.28 neg.28
 _29 _29 u011D
-to29 to29
-to-29 to-29
+pos.29 pos.29
+neg.29 neg.29
 _30 _30 u011E
-to30 to30
-to-30 to-30
+pos.30 pos.30
+neg.30 neg.30
 _31 _31 u011F
-to31 to31
-to-31 to-31
+pos.31 pos.31
+neg.31 neg.31
 _32 _32 u0120
-to32 to32
-to-32 to-32
+pos.32 pos.32
+neg.32 neg.32
 _33 _33 u0121
-to33 to33
-to-33 to-33
+pos.33 pos.33
+neg.33 neg.33
 _34 _34 u0122
-to34 to34
-to-34 to-34
+pos.34 pos.34
+neg.34 neg.34
 _35 _35 u0123
-to35 to35
-to-35 to-35
+pos.35 pos.35
+neg.35 neg.35
 _36 _36 u0124
-to36 to36
-to-36 to-36
+pos.36 pos.36
+neg.36 neg.36
 _37 _37 u0125
-to37 to37
-to-37 to-37
+pos.37 pos.37
+neg.37 neg.37
 _38 _38 u0126
-to38 to38
-to-38 to-38
+pos.38 pos.38
+neg.38 neg.38
 _39 _39 u0127
-to39 to39
-to-39 to-39
+pos.39 pos.39
+neg.39 neg.39
 _40 _40 u0128
-to40 to40
-to-40 to-40
+pos.40 pos.40
+neg.40 neg.40
 _41 _41 u0129
-to41 to41
-to-41 to-41
+pos.41 pos.41
+neg.41 neg.41
 _42 _42 u012A
-to42 to42
-to-42 to-42
+pos.42 pos.42
+neg.42 neg.42
 _43 _43 u012B
-to43 to43
-to-43 to-43
+pos.43 pos.43
+neg.43 neg.43
 _44 _44 u012C
-to44 to44
-to-44 to-44
+pos.44 pos.44
+neg.44 neg.44
 _45 _45 u012D
-to45 to45
-to-45 to-45
+pos.45 pos.45
+neg.45 neg.45
 _46 _46 u012E
-to46 to46
-to-46 to-46
+pos.46 pos.46
+neg.46 neg.46
 _47 _47 u012F
-to47 to47
-to-47 to-47
+pos.47 pos.47
+neg.47 neg.47
 _48 _48 u0130
-to48 to48
-to-48 to-48
+pos.48 pos.48
+neg.48 neg.48
 _49 _49 u0131
-to49 to49
-to-49 to-49
+pos.49 pos.49
+neg.49 neg.49
 _50 _50 u0132
-to50 to50
-to-50 to-50
+pos.50 pos.50
+neg.50 neg.50
 _51 _51 u0133
-to51 to51
-to-51 to-51
+pos.51 pos.51
+neg.51 neg.51
 _52 _52 u0134
-to52 to52
-to-52 to-52
+pos.52 pos.52
+neg.52 neg.52
 _53 _53 u0135
-to53 to53
-to-53 to-53
+pos.53 pos.53
+neg.53 neg.53
 _54 _54 u0136
-to54 to54
-to-54 to-54
+pos.54 pos.54
+neg.54 neg.54
 _55 _55 u0137
-to55 to55
-to-55 to-55
+pos.55 pos.55
+neg.55 neg.55
 _56 _56 u0138
-to56 to56
-to-56 to-56
+pos.56 pos.56
+neg.56 neg.56
 _57 _57 u0139
-to57 to57
-to-57 to-57
+pos.57 pos.57
+neg.57 neg.57
 _58 _58 u013A
-to58 to58
-to-58 to-58
+pos.58 pos.58
+neg.58 neg.58
 _59 _59 u013B
-to59 to59
-to-59 to-59
+pos.59 pos.59
+neg.59 neg.59
 _60 _60 u013C
-to60 to60
-to-60 to-60
+pos.60 pos.60
+neg.60 neg.60
 _61 _61 u013D
-to61 to61
-to-61 to-61
+pos.61 pos.61
+neg.61 neg.61
 _62 _62 u013E
-to62 to62
-to-62 to-62
+pos.62 pos.62
+neg.62 neg.62
 _63 _63 u013F
-to63 to63
-to-63 to-63
+pos.63 pos.63
+neg.63 neg.63
 _64 _64 u0140
-to64 to64
-to-64 to-64
+pos.64 pos.64
+neg.64 neg.64
 _65 _65 u0141
-to65 to65
-to-65 to-65
+pos.65 pos.65
+neg.65 neg.65
 _66 _66 u0142
-to66 to66
-to-66 to-66
+pos.66 pos.66
+neg.66 neg.66
 _67 _67 u0143
-to67 to67
-to-67 to-67
+pos.67 pos.67
+neg.67 neg.67
 _68 _68 u0144
-to68 to68
-to-68 to-68
+pos.68 pos.68
+neg.68 neg.68
 _69 _69 u0145
-to69 to69
-to-69 to-69
+pos.69 pos.69
+neg.69 neg.69
 _70 _70 u0146
-to70 to70
-to-70 to-70
+pos.70 pos.70
+neg.70 neg.70
 _71 _71 u0147
-to71 to71
-to-71 to-71
+pos.71 pos.71
+neg.71 neg.71
 _72 _72 u0148
-to72 to72
-to-72 to-72
+pos.72 pos.72
+neg.72 neg.72
 _73 _73 u0149
-to73 to73
-to-73 to-73
+pos.73 pos.73
+neg.73 neg.73
 _74 _74 u014A
-to74 to74
-to-74 to-74
+pos.74 pos.74
+neg.74 neg.74
 _75 _75 u014B
-to75 to75
-to-75 to-75
+pos.75 pos.75
+neg.75 neg.75
 _76 _76 u014C
-to76 to76
-to-76 to-76
+pos.76 pos.76
+neg.76 neg.76
 _77 _77 u014D
-to77 to77
-to-77 to-77
+pos.77 pos.77
+neg.77 neg.77
 _78 _78 u014E
-to78 to78
-to-78 to-78
+pos.78 pos.78
+neg.78 neg.78
 _79 _79 u014F
-to79 to79
-to-79 to-79
+pos.79 pos.79
+neg.79 neg.79
 _80 _80 u0150
-to80 to80
-to-80 to-80
+pos.80 pos.80
+neg.80 neg.80
 _81 _81 u0151
-to81 to81
-to-81 to-81
+pos.81 pos.81
+neg.81 neg.81
 _82 _82 u0152
-to82 to82
-to-82 to-82
+pos.82 pos.82
+neg.82 neg.82
 _83 _83 u0153
-to83 to83
-to-83 to-83
+pos.83 pos.83
+neg.83 neg.83
 _84 _84 u0154
-to84 to84
-to-84 to-84
+pos.84 pos.84
+neg.84 neg.84
 _85 _85 u0155
-to85 to85
-to-85 to-85
+pos.85 pos.85
+neg.85 neg.85
 _86 _86 u0156
-to86 to86
-to-86 to-86
+pos.86 pos.86
+neg.86 neg.86
 _87 _87 u0157
-to87 to87
-to-87 to-87
+pos.87 pos.87
+neg.87 neg.87
 _88 _88 u0158
-to88 to88
-to-88 to-88
+pos.88 pos.88
+neg.88 neg.88
 _89 _89 u0159
-to89 to89
-to-89 to-89
+pos.89 pos.89
+neg.89 neg.89
 _90 _90 u015A
-to90 to90
-to-90 to-90
+pos.90 pos.90
+neg.90 neg.90
 _91 _91 u015B
-to91 to91
-to-91 to-91
+pos.91 pos.91
+neg.91 neg.91
 _92 _92 u015C
-to92 to92
-to-92 to-92
+pos.92 pos.92
+neg.92 neg.92
 _93 _93 u015D
-to93 to93
-to-93 to-93
+pos.93 pos.93
+neg.93 neg.93
 _94 _94 u015E
-to94 to94
-to-94 to-94
+pos.94 pos.94
+neg.94 neg.94
 _95 _95 u015F
-to95 to95
-to-95 to-95
+pos.95 pos.95
+neg.95 neg.95
 _96 _96 u0160
-to96 to96
-to-96 to-96
+pos.96 pos.96
+neg.96 neg.96
 _97 _97 u0161
-to97 to97
-to-97 to-97
+pos.97 pos.97
+neg.97 neg.97
 _98 _98 u0162
-to98 to98
-to-98 to-98
+pos.98 pos.98
+neg.98 neg.98
 _99 _99 u0163
-to99 to99
-to-99 to-99
+pos.99 pos.99
+neg.99 neg.99
 _100 _100 u0164
-to100 to100
-to-100 to-100
+pos.100 pos.100
+neg.100 neg.100
 _101 _101 u0165
-to101 to101
-to-101 to-101
+pos.101 pos.101
+neg.101 neg.101
 _102 _102 u0166
-to102 to102
-to-102 to-102
+pos.102 pos.102
+neg.102 neg.102
 _103 _103 u0167
-to103 to103
-to-103 to-103
+pos.103 pos.103
+neg.103 neg.103
 _104 _104 u0168
-to104 to104
-to-104 to-104
+pos.104 pos.104
+neg.104 neg.104
 _105 _105 u0169
-to105 to105
-to-105 to-105
+pos.105 pos.105
+neg.105 neg.105
 _106 _106 u016A
-to106 to106
-to-106 to-106
+pos.106 pos.106
+neg.106 neg.106
 _107 _107 u016B
-to107 to107
-to-107 to-107
+pos.107 pos.107
+neg.107 neg.107
 _108 _108 u016C
-to108 to108
-to-108 to-108
+pos.108 pos.108
+neg.108 neg.108
 _109 _109 u016D
-to109 to109
-to-109 to-109
+pos.109 pos.109
+neg.109 neg.109
 _110 _110 u016E
-to110 to110
-to-110 to-110
+pos.110 pos.110
+neg.110 neg.110
 _111 _111 u016F
-to111 to111
-to-111 to-111
+pos.111 pos.111
+neg.111 neg.111
 _112 _112 u0170
-to112 to112
-to-112 to-112
+pos.112 pos.112
+neg.112 neg.112
 _113 _113 u0171
-to113 to113
-to-113 to-113
+pos.113 pos.113
+neg.113 neg.113
 _114 _114 u0172
-to114 to114
-to-114 to-114
+pos.114 pos.114
+neg.114 neg.114
 _115 _115 u0173
-to115 to115
-to-115 to-115
+pos.115 pos.115
+neg.115 neg.115
 _116 _116 u0174
-to116 to116
-to-116 to-116
+pos.116 pos.116
+neg.116 neg.116
 _117 _117 u0175
-to117 to117
-to-117 to-117
+pos.117 pos.117
+neg.117 neg.117
 _118 _118 u0176
-to118 to118
-to-118 to-118
+pos.118 pos.118
+neg.118 neg.118
 _119 _119 u0177
-to119 to119
-to-119 to-119
+pos.119 pos.119
+neg.119 neg.119
 _120 _120 u0178
-to120 to120
-to-120 to-120
+pos.120 pos.120
+neg.120 neg.120
 _121 _121 u0179
-to121 to121
-to-121 to-121
+pos.121 pos.121
+neg.121 neg.121
 _122 _122 u017A
-to122 to122
-to-122 to-122
+pos.122 pos.122
+neg.122 neg.122
 _123 _123 u017B
-to123 to123
-to-123 to-123
+pos.123 pos.123
+neg.123 neg.123
 _124 _124 u017C
-to124 to124
-to-124 to-124
+pos.124 pos.124
+neg.124 neg.124
 _125 _125 u017D
-to125 to125
-to-125 to-125
+pos.125 pos.125
+neg.125 neg.125
 _126 _126 u017E
-to126 to126
-to-126 to-126
+pos.126 pos.126
+neg.126 neg.126
 _127 _127 u017F
-to127 to127
-to-127 to-127
+pos.127 pos.127
+neg.127 neg.127

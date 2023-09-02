@@ -2,22 +2,16 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[7] Linefont-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+<details><summary><b>[6] Linefont-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -272,22 +266,16 @@ The following glyphs do not have the recommended number of contours:
 	* _119 (U+0177): X=50.0,Y=1198.0 (should be at ascender 1200?) 
 
 	* _121 (U+0179): X=50.0,Y=1202.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[7] Linefont-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] Linefont-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -558,22 +546,16 @@ The following glyphs do not have the recommended number of contours:
 	* _121 (U+0179): X=62.0,Y=1198.5 (should be at ascender 1200?) 
 
 	* _121 (U+0179): X=38.5,Y=1198.5 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[7] Linefont-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] Linefont-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -836,22 +818,16 @@ The following glyphs do not have the recommended number of contours:
 	* _122 (U+017A): X=69.0,Y=1201.0 (should be at ascender 1200?) 
 
 	* _122 (U+017A): X=31.0,Y=1201.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[7] Linefont-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] Linefont-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -1092,22 +1068,16 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* _116 (U+0174): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[7] Linefont-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] Linefont-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -1352,22 +1322,16 @@ The following glyphs do not have the recommended number of contours:
 	* _0 (U+0100): X=50.0,Y=-2.0 (should be at cap-height 0?) 
 
 	* _120 (U+0178): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[6] Linefont-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[5] Linefont-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -1602,22 +1566,16 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _126	Contours detected: 1	Expected: 2
  [code: contour-count]
-</div></details><br></div></details><details><summary><b>[6] Linefont-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[5] Linefont-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -1852,22 +1810,16 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _126	Contours detected: 1	Expected: 2
  [code: contour-count]
-</div></details><br></div></details><details><summary><b>[7] Linefont-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] Linefont-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -2122,22 +2074,16 @@ The following glyphs do not have the recommended number of contours:
 	* _127 (U+017F): X=120.5,Y=1199.5 (should be at ascender 1200?) 
 
 	* _127 (U+017F): X=-20.5,Y=1199.5 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[6] Linefont-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[5] Linefont-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1370, but got 1200 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1278, but got 200 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: to-0, to-1, to-10, to-100, to-101, to-102, to-103, to-104, to-105, to-106, to-107, to-108, to-109, to-11, to-110, to-111, to-112, to-113, to-114, to-115, to-116, to-117, to-118, to-119, to-12, to-120, to-121, to-122, to-123, to-124, to-125, to-126, to-127, to-13, to-14, to-15, to-16, to-17, to-18, to-19, to-2, to-20, to-21, to-22, to-23, to-24, to-25, to-26, to-27, to-28, to-29, to-3, to-30, to-31, to-32, to-33, to-34, to-35, to-36, to-37, to-38, to-39, to-4, to-40, to-41, to-42, to-43, to-44, to-45, to-46, to-47, to-48, to-49, to-5, to-50, to-51, to-52, to-53, to-54, to-55, to-56, to-57, to-58, to-59, to-6, to-60, to-61, to-62, to-63, to-64, to-65, to-66, to-67, to-68, to-69, to-7, to-70, to-71, to-72, to-73, to-74, to-75, to-76, to-77, to-78, to-79, to-8, to-80, to-81, to-82, to-83, to-84, to-85, to-86, to-87, to-88, to-89, to-9, to-90, to-91, to-92, to-93, to-94, to-95, to-96, to-97, to-98 and to-99
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 133 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
@@ -2378,7 +2324,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 27 | 33 | 1118 | 55 | 845 | 0 |
+| 0 | 18 | 33 | 1118 | 55 | 854 | 0 |
 | 0% | 1% | 2% | 54% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
