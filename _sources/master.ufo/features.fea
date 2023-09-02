@@ -20,8 +20,8 @@ feature mark {
   {{/each}}
 
   {{#each FONT.values as |code value|}}
-  pos cursive to{{value}} <anchor 0 0> <anchor {{../width}} {{upm value}}>;
-  pos cursive to-{{value}} <anchor 0 0> <anchor {{../width}} -{{upm value}}>;
+  pos cursive pos.{{value}} <anchor 0 0> <anchor {{../width}} {{upm value}}>;
+  pos cursive neg.{{value}} <anchor 0 0> <anchor {{../width}} -{{upm value}}>;
   {{/each}}
 } mark;
 
@@ -34,23 +34,23 @@ feature liga {
   # We replace single values with pair of lines
   # Reversesub is compact notation and has no overflow, compared to O(N²) pair subs
   # rsub ostensibly ignores final result of replacement and instead looks at the initial sequence
-  # rsub _0 @value' by [to0 to1 to2 to3];
-  # rsub _1 @value' by [to-1 to0 to1 to2];
-  # rsub _2 @value' by [to-2 to-1 to0 to1];
-  # rsub _10 [_20 _30 _40 _50]' by [to10 to20 to30 to40];
-  # rsub _20 [_20 _30 _40 _50]' by [to0 to10 to20 to30];
-  # rsub _30 [_20 _30 _40 _50]' by [to-10 to0 to10 to20];
-  # rsub _40 [_20 _30 _40 _50]' by [to-20 to-10 to0 to10];
+  # rsub _0 @value' by [pos.0 pos.1 pos.2 pos.3];
+  # rsub _1 @value' by [neg.1 pos.0 pos.1 pos.2];
+  # rsub _2 @value' by [neg.2 neg.1 pos.0 pos.1];
+  # rsub _10 [_20 _30 _40 _50]' by [pos.10 pos.20 pos.30 pos.40];
+  # rsub _20 [_20 _30 _40 _50]' by [pos.0 pos.10 pos.20 pos.30];
+  # rsub _30 [_20 _30 _40 _50]' by [neg.10 pos.0 pos.10 pos.20];
+  # rsub _40 [_20 _30 _40 _50]' by [neg.20 neg.10 pos.0 pos.10];
   {{#each FONT.values as |i v1|}}
-  rsub _{{v1}} @value' by [{{#each ../FONT.values as |i v2|}}to{{sub v2 v1}} {{/each}}];
+  rsub _{{v1}} @value' by [{{#each ../FONT.values as |i v2|}}{{sub v2 v1}} {{/each}}];
   {{/each}}
 
   # Append join after line - reduces size by 30% compared to TTF components in lines
   # Also smoothes interpolated values a bit
   # See https://github.com/dy/linefont/issues/7
   {{#each FONT.values as |code value|}}
-  sub to{{value}} by to{{value}} join;
-  sub to-{{value}} by to-{{value}} join;
+  sub pos.{{value}} by pos.{{value}} join;
+  sub neg.{{value}} by neg.{{value}} join;
   {{/each}}
 
 } liga;

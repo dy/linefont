@@ -3,6 +3,6 @@ space space {{#each SPACE as |code|}}{{uni code}}{{#unless @last}},{{/unless}}{{
 
 {{#each FONT.values as |code value| }}
 _{{ value }} _{{ value }} {{uni code}}{{#if (lookup ../FONT.alias value)}}{{#each (lookup ../font.alias value) as |aliasCode|}},{{uni aliasCode}}{{/each}}{{/if}}
-to{{value}} to{{value}}
-to-{{value}} to-{{value}}
+pos.{{value}} pos.{{value}}
+neg.{{value}} neg.{{value}}
 {{/each}}

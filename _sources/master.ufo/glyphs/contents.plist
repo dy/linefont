@@ -9,8 +9,8 @@
 
     {{#each FONT.values as |code value|}}
     <key>_{{ value }}</key><string>{{ value }}.glif</string>
-    <key>to{{ value }}</key><string>to{{ value }}.glif</string>
-    <key>to-{{ value }}</key><string>to-{{ value }}.glif</string>
+    <key>pos.{{ value }}</key><string>pos.{{ value }}.glif</string>
+    <key>neg.{{ value }}</key><string>neg.{{ value }}.glif</string>
     {{/each}}
   </dict>
 </plist>
