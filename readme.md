@@ -50,7 +50,7 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 Tag | Range | Meaning
 ---|---|---
-`wght` | _1_-_1000_ | Line thickness.
+`wght` | _1_-_1000_ | Line thickness, uses log (typographic) scale.
 `wdth` | _25_-_200_ | Width of the font (ie. zoom of the signal).
 
 
