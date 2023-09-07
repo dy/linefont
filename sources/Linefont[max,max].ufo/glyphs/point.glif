@@ -2,18 +2,18 @@
 <glyph name="point" format="2">
 	<outline>
 		<contour>
-			<point x="-100" y="-55"/>
-			<point x="-100" y="0" type="curve" smooth="yes"/>
-			<point x="-100" y="55"/>
-			<point x="-55" y="100"/>
-			<point x="0" y="100" type="curve" smooth="yes"/>
-			<point x="55" y="100"/>
-			<point x="100" y="55"/>
-			<point x="100" y="0" type="curve" smooth="yes"/>
-			<point x="100" y="-55"/>
-			<point x="55" y="-100"/>
-			<point x="0" y="-100" type="curve" smooth="yes"/>
-			<point x="-55" y="-100"/>
+			<point x="-128" y="-70.4"/>
+			<point x="-128" y="0" type="curve" smooth="yes"/>
+			<point x="-128" y="70.4"/>
+			<point x="-70.4" y="128"/>
+			<point x="0" y="128" type="curve" smooth="yes"/>
+			<point x="70.4" y="128"/>
+			<point x="128" y="70.4"/>
+			<point x="128" y="0" type="curve" smooth="yes"/>
+			<point x="128" y="-70.4"/>
+			<point x="70.4" y="-128"/>
+			<point x="0" y="-128" type="curve" smooth="yes"/>
+			<point x="-70.4" y="-128"/>
 		</contour>
 	</outline>
 </glyph>

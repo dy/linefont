@@ -3,10 +3,10 @@
 	<advance width="200"/>
 	<outline>
 		<contour>
-			<point x="-197.342" y="22.904" type="line"/>
-			<point x="2.658" y="872.904" type="line"/>
-			<point x="197.342" y="827.096" type="line"/>
-			<point x="-2.658" y="-22.904" type="line"/>
+			<point x="-224.597" y="29.317" type="line"/>
+			<point x="-24.597" y="879.317" type="line"/>
+			<point x="224.597" y="820.683" type="line"/>
+			<point x="24.597" y="-29.317" type="line"/>
 		</contour>
 	</outline>
 </glyph>
