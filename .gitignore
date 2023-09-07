@@ -107,3 +107,4 @@ venv
 *.stamp
 
 .DS_Store
+.ninja_log
