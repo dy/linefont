@@ -321,14 +321,33 @@
       Linefont&nbsp;<sup><small><a title="github" href="https://github.com/dy/linefont">2.1</a></small></sup>
     </h1>
     <div class="panel-field">
-      <label for="width"><small>Width</small></label> <input id="width" type="range" min="25" value="25" max="200"
-        step="1" />
-      <output id="widthValue"></output>
+      <label for="weight"><small>Weight</small></label>
+      <input id="weight" type="range" min="0" value="400" max="1000" step="10" list="weights" />
+      <datalist id="weights">
+        <option>0</option>
+        <option>100</option>
+        <option>200</option>
+        <option>300</option>
+        <option>400</option>
+        <option>500</option>
+        <option>600</option>
+        <option>700</option>
+        <option>800</option>
+        <option>900</option>
+        <option>1000</option>
+      </datalist>
+      <output id="weightValue"></output>
     </div>
     <div class="panel-field">
-      <label for="weight"><small>Weight</small></label> <input id="weight" type="range" min="100" value="400" max="900"
-        step="10" />
-      <output id="weightValue"></output>
+      <label for="width"><small>Width</small></label> <input id="width" type="range" min="25" value="25" max="200"
+        step="5" list="widths" />
+      <datalist id="widths">
+        <option>25</option>
+        <option>50</option>
+        <option>100</option>
+        <option>200</option>
+      </datalist>
+      <output id="widthValue"></output>
     </div>
     <div class="panel-field">
       <label for="size"><small>Size</small></label> <input id="size" type="range" min="10" value="100" max="100"

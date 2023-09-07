@@ -17,7 +17,7 @@
   <key>versionMinor</key>
   <integer>{{ FONT.version.minor }}</integer>
   <key>copyright</key>
-  <string>Copyright 2022 The Linefont Project Authors (https://github.com/dy/wavefont)</string>
+  <string>Copyright 2022 The Linefont Project Authors (https://github.com/dy/linefont)</string>
   <key>unitsPerEm</key>
   <integer>{{upm FONT.max }}</integer>
   <key>ascender</key>

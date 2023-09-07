@@ -11,7 +11,7 @@ const SPACE = [0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x20, 0x21, 0x22, 0x23, 0x24, 0x25,
 const AXES = {
   // NOTE: width comes first to be compat with gftools
   width: { name: 'Width', tag: 'wdth', min: 25, mid: 100, max: 200 },
-  weight: { name: 'Weight', tag: 'wght', min: 5, max: 200, default: 5 },
+  weight: { name: 'Weight', tag: 'wght', min: 8, max: 256 },
 }
 
 // create masters [weight,width]
@@ -40,7 +40,7 @@ const FONT = {
   values: Array.from({ length: 128 }).map((v, i) => (0x100 + i))
 }
 
-// add alias to wavefont100
+// add alias
 function alias(value, char) {
   (FONT.alias[value] ||= []).push(char.charCodeAt(0))
 }

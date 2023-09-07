@@ -1,4 +1,4 @@
-gftools>=0.9.33
+gftools==0.9.33 # any other version is likely to fail
 ufonormalizer>=0.6
 fontbakery>=0.8.11
 fonttools>=4.42.1

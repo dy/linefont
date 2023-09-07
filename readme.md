@@ -50,7 +50,7 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 Tag | Range | Meaning
 ---|---|---
-`wght` | _100_-_900_ | Line thickness.
+`wght` | _1_-_1000_ | Line thickness.
 `wdth` | _25_-_200_ | Width of the font (ie. zoom of the signal).
 
 
@@ -60,7 +60,7 @@ Tag | Range | Meaning
 * Visible charcodes fall under _marking characters_ unicode category, ie. recognized as word by regexp and can be selected with <kbd>Ctrl</kbd> + <kbd>→</kbd> or double click. Eg. segments separated by ` ` or `-` are selectable by double click.
 * Characters outside of visible ranges (but within Core Latin) are clipped to _0_, eg. ` `, `\t` etc.
 * Caret span is -20..120, so line-height = 1.4 is minimal non-overlapping selection.
-
+* `wght` can be mapped 1:1 to `wdth` as 300:25, 500:50, 700:100, 900:200.
 
 ## npm package
 
