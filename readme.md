@@ -50,13 +50,13 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 Tag | Range | Meaning
 ---|---|---
-`wght` | _1_-_1000_ | Line thickness (quarter upms).
+`wght` | _1_-_1000_ | Line thickness (quarter upms, linear).
 `wdth` | _25_-_200_ | Width of the font (ie. zoom of the signal).
 
 
 ## Features
 
-* Ranges, values, width and weight is compatible with [wavefont](https://github.com/dy/wavefont).
+* Ranges, values and weight is compatible with [wavefont](https://github.com/dy/wavefont), so fonts can be swapped at `wdth=100`, preserving visual coherency.
 * Visible charcodes fall under _marking characters_ unicode category, ie. recognized as word by regexp and can be selected with <kbd>Ctrl</kbd> + <kbd>→</kbd> or double click. Eg. segments separated by ` ` or `-` are selectable by double click.
 * Characters outside of visible ranges (but within Core Latin) are clipped to _0_, eg. ` `, `\t` etc.
 * Caret span is -20..120, so line-height = 1.4 is minimal non-overlapping selection.
