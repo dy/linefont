@@ -3,67 +3,58 @@
     <axes>
         <axis default="100" minimum="25" maximum="200" name="Width" tag="wdth">
         </axis>
-        <axis default="1" minimum="1" maximum="1000" name="Weight" tag="wght">
-            <map input="1" output="8"/>
-            <map input="100" output="12"/>
-            <map input="200" output="16"/>
-            <map input="300" output="25"/>
-            <map input="400" output="32"/>
-            <map input="500" output="50"/>
-            <map input="600" output="64"/>
-            <map input="700" output="100"/>
-            <map input="800" output="128"/>
-            <map input="900" output="200"/>
-            <map input="1000" output="256"/>
+        <axis default="20" minimum="20" maximum="1000" name="Weight" tag="wght">
+            <map input="20" output="5"/>
+            <map input="1000" output="250"/>
         </axis>
     </axes>
 
     <sources>
         <source familyname="Linefont" filename="Linefont[min,min].ufo" name="Master_0" stylename="Master 0">
             <location>
-                <dimension name="Weight" xvalue="8" />
+                <dimension name="Weight" xvalue="5" />
                 <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,max].ufo" name="Master_1" stylename="Master 1">
             <location>
-                <dimension name="Weight" xvalue="8" />
+                <dimension name="Weight" xvalue="5" />
                 <dimension name="Width" xvalue="200" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,min].ufo" name="Master_2" stylename="Master 2">
             <location>
-                <dimension name="Weight" xvalue="256" />
+                <dimension name="Weight" xvalue="250" />
                 <dimension name="Width" xvalue="25" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,max].ufo" name="Master_3" stylename="Master 3">
             <location>
-                <dimension name="Weight" xvalue="256" />
+                <dimension name="Weight" xvalue="250" />
                 <dimension name="Width" xvalue="200" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,low].ufo" name="Master_4" stylename="Master 4">
             <location>
-                <dimension name="Weight" xvalue="8" />
+                <dimension name="Weight" xvalue="5" />
                 <dimension name="Width" xvalue="50" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,low].ufo" name="Master_5" stylename="Master 5">
             <location>
-                <dimension name="Weight" xvalue="256" />
+                <dimension name="Weight" xvalue="250" />
                 <dimension name="Width" xvalue="50" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[min,mid].ufo" name="Master_6" stylename="Master 6">
             <location>
-                <dimension name="Weight" xvalue="8" />
+                <dimension name="Weight" xvalue="5" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </source>
         <source familyname="Linefont" filename="Linefont[max,mid].ufo" name="Master_7" stylename="Master 7">
             <location>
-                <dimension name="Weight" xvalue="256" />
+                <dimension name="Weight" xvalue="250" />
                 <dimension name="Width" xvalue="100" />
             </location>
         </source>
