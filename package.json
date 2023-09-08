@@ -1,6 +1,6 @@
 {
   "name": "linefont",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Typeface for visualizing data as line chart",
   "main": "index.js",
   "scripts": {
