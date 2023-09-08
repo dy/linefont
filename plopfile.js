@@ -11,7 +11,7 @@ const SPACE = [0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x20, 0x21, 0x22, 0x23, 0x24, 0x25,
 const AXES = {
   // NOTE: width comes first to be compat with gftools
   width: { name: 'Width', tag: 'wdth', min: 25, mid: 100, max: 200 },
-  weight: { name: 'Weight', tag: 'wght', min: 8, max: 256 },
+  weight: { name: 'Weight', tag: 'wght', min: 5, max: 250 },
 }
 
 // create masters [weight,width]
