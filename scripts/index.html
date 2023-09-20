@@ -196,12 +196,12 @@
     resize: none;
     z-index: -1;
     word-break: break-all;
-    --wdth: 5;
-    --wght: 5;
+    --wdth: 100;
+    --wght: 100;
     --size: 100px;
     font-size: var(--size);
     letter-spacing: var(--track);
-    font-variation-settings: 'wdth' var(--wdth), 'wght' var(--wght);
+    font-variation-settings: 'wdth' var(--wdth, 100), 'wght' var(--wght, 100);
     background-size: 100vw calc(var(--size) / 10);
     background-image: linear-gradient(to bottom, rgb(230, 245, 255) 1px, transparent 1px);
     background-attachment: local;
@@ -339,7 +339,7 @@
       <output id="weightValue"></output>
     </div>
     <div class="panel-field">
-      <label for="width"><small>Width</small></label> <input id="width" type="range" min="25" value="25" max="200"
+      <label for="width"><small>Width</small></label> <input id="width" type="range" min="25" value="50" max="200"
         step="5" list="widths" />
       <datalist id="widths">
         <option>25</option>

@@ -3,11 +3,11 @@ buildStatic: true
 sources:
   - Linefont.designspace
 familyName: Linefont
-# needs to custom the STAT for Hairline and ExtraBlack which won't be generated automatically.
 axisOrder:
   - wdth
   - wght
-stat: 
+# needs to custom the STAT for Hairline and ExtraBlack which won't be generated automatically.
+stat:
   - name: Width
     tag: wdth
     values:
@@ -54,4 +54,4 @@ stat:
     - name: Black
       value: 900
     - name: ExtraBlack
-      valule: 1000
+      value: 1000
