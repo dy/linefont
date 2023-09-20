@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="100" minimum="4" maximum="200" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}">
+        <axis default="100" minimum="25" maximum="200" name="{{ AXES.width.name }}" tag="{{ AXES.width.tag }}">
         </axis>
-        <axis default="100" minimum="20" maximum="1000" name="Weight" tag="wght">
+        <axis default="100" minimum="4" maximum="1000" name="Weight" tag="wght">
             <map input="4" output="1"/>
             <map input="100" output="25"/>
             <map input="1000" output="250"/>
