@@ -1,8 +1,8 @@
 ## FontBakery report
 
-fontbakery version: 0.9.1
+fontbakery version: 0.9.2
 
-<details><summary><b>[10] Linefont-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+<details><summary><b>[11] Linefont-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -29,6 +29,64 @@ fontbakery version: 0.9.1
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -48,7 +106,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -96,19 +154,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -128,19 +186,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -271,7 +329,7 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* _116 (U+0174): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[9] Linefont-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] Linefont-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -298,6 +356,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -317,7 +433,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -365,19 +481,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -397,19 +513,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -534,7 +650,7 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** _61 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
 * ⚠ **WARN** _62 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
 * ⚠ **WARN** _101 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
-</div></details><br></div></details><details><summary><b>[10] Linefont-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] Linefont-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -561,6 +677,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -580,7 +754,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -628,19 +802,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -660,19 +834,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -811,7 +985,7 @@ The following glyphs do not have the recommended number of contours:
 	* _6 (U+0106): X=50.0,Y=-2.0 (should be at cap-height 0?)
 
 	* _126 (U+017E): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[10] Linefont-ExtraBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] Linefont-ExtraBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -838,6 +1012,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -857,7 +1089,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -905,19 +1137,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -937,19 +1169,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -1094,7 +1326,7 @@ The following glyphs do not have the recommended number of contours:
 	* _127 (U+017F): X=120.5,Y=1199.5 (should be at ascender 1200?)
 
 	* _127 (U+017F): X=-20.5,Y=1199.5 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[9] Linefont-ExtraLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] Linefont-ExtraLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -1121,6 +1353,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -1140,7 +1430,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -1188,19 +1478,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -1220,19 +1510,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -1357,7 +1647,7 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** _61 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
 * ⚠ **WARN** _62 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
 * ⚠ **WARN** _101 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
-</div></details><br></div></details><details><summary><b>[9] Linefont-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] Linefont-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -1384,6 +1674,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -1403,7 +1751,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -1451,19 +1799,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -1483,19 +1831,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -1620,7 +1968,7 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** _61 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
 * ⚠ **WARN** _62 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
 * ⚠ **WARN** _101 is composed of a single component and therefore could not be checked. Please check manually. [code: single-component]
-</div></details><br></div></details><details><summary><b>[10] Linefont-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] Linefont-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -1647,6 +1995,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -1666,7 +2072,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -1714,19 +2120,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -1746,19 +2152,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -1891,7 +2297,7 @@ The following glyphs do not have the recommended number of contours:
 	* _11 (U+010B): X=50.0,Y=-2.0 (should be at baseline 0?)
 
 	* _11 (U+010B): X=50.0,Y=-2.0 (should be at cap-height 0?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[10] Linefont-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] Linefont-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -1918,6 +2324,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -1937,7 +2401,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -1985,19 +2449,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -2017,19 +2481,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -2172,7 +2636,7 @@ The following glyphs do not have the recommended number of contours:
 	* _1 (U+0101): X=50.0,Y=-2.0 (should be at cap-height 0?)
 
 	* _121 (U+0179): X=50.0,Y=1198.0 (should be at ascender 1200?) [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[10] Linefont-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] Linefont-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
@@ -2199,6 +2663,64 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
 * ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 261 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+0009 : try adding symbols
+ * U+000A : try adding symbols
+ * U+000B : try adding symbols
+ * U+000C : try adding symbols
+ * U+0085 : try adding symbols
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+ * U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, coptic, glagolitic, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, canadian-aboriginal, tai-le, coptic, math, old-permic, malayalam
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+1680 OGHAM SPACE MARK: try adding ogham
+ * U+180E MONGOLIAN VOWEL SEPARATOR: try adding mongolian
+ * U+2000 EN QUAD: not included in any glyphset definition
+ * U+2001 EM QUAD: not included in any glyphset definition
+ * U+2003 EM SPACE: try adding nushu
+ * U+2004 THREE-PER-EM SPACE: not included in any glyphset definition
+ * U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition
+ * U+2006 SIX-PER-EM SPACE: not included in any glyphset definition
+ * U+2007 FIGURE SPACE: not included in any glyphset definition
+ * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
+ * U+200A HAIR SPACE: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, khmer, gurmukhi, kayah-li, devanagari, dogra, sogdian, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, telugu, chakma, kharoshthi, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, hatran, myanmar, gujarati, mahajani, oriya, pahawh-hmong, grantha, psalter-pahlavi, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200D ZERO WIDTH JOINER: try adding one of: tamil, phags-pa, tirhuta, buginese, gurmukhi, kayah-li, devanagari, dogra, khojki, hanifi-rohingya, batak, thai, brahmi, nko, syriac, tifinagh, cham, hanunoo, tagbanwa, mongolian, bengali, gunjala-gondi, manichaean, sundanese, old-hungarian, chakma, kharoshthi, telugu, tai-viet, tai-tham, malayalam, takri, mandaic, tibetan, kaithi, siddham, new-tai-lue, rejang, sinhala, syloti-nagri, lepcha, sharada, tagalog, thaana, avestan, javanese, modi, myanmar, pahawh-hmong, gujarati, mahajani, oriya, psalter-pahlavi, grantha, tai-le, kannada, meetei-mayek, limbu, buhid, yi, duployan, saurashtra, khudawadi, balinese, warang-citi, newa
+ * U+200E LEFT-TO-RIGHT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, syriac, phags-pa, nko
+ * U+2010 HYPHEN: try adding one of: lisu, sora-sompeng, kaithi, cham, coptic, syloti-nagri, sundanese, kayah-li, kharoshthi, yi
+ * U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri
+ * U+2012 FIGURE DASH: not included in any glyphset definition
+ * U+2028 LINE SEPARATOR: not included in any glyphset definition
+ * U+2029 PARAGRAPH SEPARATOR: not included in any glyphset definition
+ * U+202F NARROW NO-BREAK SPACE: try adding one of: yi, mongolian
+ * U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition
+ * U+2060 WORD JOINER: not included in any glyphset definition
+ * U+2061 FUNCTION APPLICATION: not included in any glyphset definition
+ * U+2062 INVISIBLE TIMES: not included in any glyphset definition
+ * U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-hongkong, japanese, chinese-simplified, chinese-traditional, yi, nushu
+
+Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -2218,7 +2740,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _3	Contours detected: 1	Expected: 3
 
-	- Glyph name: _4	Contours detected: 1	Expected: 2or3
+	- Glyph name: _4	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _5	Contours detected: 1	Expected: 2
 
@@ -2266,19 +2788,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _28	Contours detected: 1	Expected: 2
 
-	- Glyph name: _29	Contours detected: 1	Expected: 3or4
+	- Glyph name: _29	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _30	Contours detected: 1	Expected: 2
 
-	- Glyph name: _31	Contours detected: 1	Expected: 3or4
+	- Glyph name: _31	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _32	Contours detected: 1	Expected: 2
 
-	- Glyph name: _33	Contours detected: 1	Expected: 3or4
+	- Glyph name: _33	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _34	Contours detected: 1	Expected: 2
 
-	- Glyph name: _35	Contours detected: 1	Expected: 3or4
+	- Glyph name: _35	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _36	Contours detected: 1	Expected: 2
 
@@ -2298,19 +2820,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: _45	Contours detected: 1	Expected: 2
 
-	- Glyph name: _47	Contours detected: 1	Expected: 2or3
+	- Glyph name: _47	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _48	Contours detected: 1	Expected: 2
 
-	- Glyph name: _51	Contours detected: 1	Expected: 3or4
+	- Glyph name: _51	Contours detected: 1	Expected: 3 or 4
 
 	- Glyph name: _52	Contours detected: 1	Expected: 2
 
 	- Glyph name: _53	Contours detected: 1	Expected: 2
 
-	- Glyph name: _54	Contours detected: 1	Expected: 2or3
+	- Glyph name: _54	Contours detected: 1	Expected: 2 or 3
 
-	- Glyph name: _55	Contours detected: 1	Expected: 2or3
+	- Glyph name: _55	Contours detected: 1	Expected: 2 or 3
 
 	- Glyph name: _57	Contours detected: 1	Expected: 2
 
@@ -2471,7 +2993,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 18 | 36 | 33 | 1145 | 46 | 836 | 0 |
+| 18 | 36 | 42 | 1127 | 46 | 836 | 0 |
 | 1% | 2% | 2% | 54% | 2% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
