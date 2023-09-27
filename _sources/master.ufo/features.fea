@@ -30,7 +30,7 @@ feature mark {
 
 @value = [{{#each FONT.values as |code value|}}_{{ value }} {{/each}}];
 
-feature liga {
+feature rlig {
   # We replace single values with pair of lines
   # Reversesub is compact notation and has no overflow, compared to O(N²) pair subs
   # rsub ostensibly ignores final result of replacement and instead looks at the initial sequence
@@ -53,4 +53,4 @@ feature liga {
   sub neg.{{value}} by neg.{{value}} join;
   {{/each}}
 
-} liga;
+} rlig;
