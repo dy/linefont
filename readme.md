@@ -81,6 +81,10 @@ lf(0, 1, 50, 99, 127, ...) // ĀāĲţŤ...
 * [Text](https://dy.github.io/linefont/out/proof/text)
 * [Waterfall](https://dy.github.io/linefont/out/proof/waterfall)
 
+## Troubleshooting
+
+* The font requires ligatures (`rlig`) enabled for it to be properly rendered. Some environments (eg. MS Word) may not have it enabled by default, in this case enable "All Ligatures" in advance font parameters.
+
 ## See also
 
 * [wavefont](https://github.com/dy/wavefont) − font-face for rendering waveforms.
