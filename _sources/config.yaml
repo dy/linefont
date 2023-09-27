@@ -11,6 +11,8 @@ stat:
   - name: Width
     tag: wdth
     values:
+    - name: SuperCondensed
+      value: 25
     - name: UltraCondensed
       value: 50
     - name: ExtraCondensed
