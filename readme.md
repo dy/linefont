@@ -23,6 +23,7 @@ Put [Linefont[wdth,wght].woff2](./fonts/variable/Linefont[wdth,wght].woff2) into
 	--wdth: 50;
 	font-family: linefont;
 	font-variation-settings: 'wght' var(--wght), 'wdth' var(--wdth);
+	line-height: 1.4; /* match selection, optional */
 }
 </style>
 
