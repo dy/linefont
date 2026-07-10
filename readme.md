@@ -44,15 +44,15 @@ Linefont values span from 0 to 100, assigned to different characters:
 
 * <kbd>0-9</kbd> chars for simplified manual input with step 10 (height = number×10).
 * <kbd>a-zA-Z</kbd> for manual input with step 2, softened at edges <kbd>a</kbd> and <kbd>Z</kbd> (height = number of letter).
-* <kbd>U+0100-017F</kbd> for 0-127 values with step 1 (extra 27 values).
+* <kbd>U+0100-017F</kbd> for 0-127 values with step 1 (extra 27 values). <kbd>U+0180</kbd> renders as max (off-by-one clamp guard), higher codepoints render blank.
 
 
 ## Variable Axes
 
 Tag | Range | Meaning
 ---|---|---
-`wght` | _1_-_1000_ | Line thickness (quarter upms, linear).
-`wdth` | _25_-_200_ | Width of the font (ie. zoom of the signal).
+`wght` | _4_-_1000_ | Line thickness (quarter upms, linear), default _100_.
+`wdth` | _25_-_200_ | Width of the font (ie. zoom of the signal), default _100_.
 
 
 ## Features
@@ -60,18 +60,23 @@ Tag | Range | Meaning
 * Ranges, values and weight is compatible with [wavefont](https://github.com/dy/wavefont), so fonts can be swapped at `wdth=100`, preserving visual coherency.
 * Visible charcodes fall under _marking characters_ unicode category, ie. recognized as word by regexp and can be selected with <kbd>Ctrl</kbd> + <kbd>→</kbd> or double click. Eg. segments separated by ` ` or `-` are selectable by double click.
 * Characters outside of visible ranges (but within Core Latin) are clipped to _0_, eg. ` `, `\t` etc.
-* Caret span is -20..120, so line-height = 1.4 is minimal non-overlapping selection.
+* Caret span is -30..130 (covers full ink incl. value 127), so line-height = 1.6 is minimal non-overlapping selection.
 
 ## npm package
 
 _Linefont_ npm package contains the font and a js function that produces font string from values.
 
 ```js
-import lf from 'linefont'
+import lf, { char } from 'linefont'
 
-// get characters for values from 0..127 range
-lf(0, 1, 50, 99, 127, ...) // ĀāĲţŤ...
+// characters for values from 0..127 range (clamped & rounded)
+lf(0, 1, 50, 99, 127) // 'ĀāĲţſ'
+
+// arrays or typed arrays of any length
+lf(new Float32Array([0, 64, 127])) // 'Āŀſ'
 ```
+
+Types included.
 
 ## Building
 

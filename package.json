@@ -1,9 +1,21 @@
 {
   "name": "linefont",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Typeface for visualizing data as line chart",
+  "type": "module",
   "main": "index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./fonts/*": "./fonts/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
   "scripts": {
+    "test": "node --test test.js",
     "build": "make build"
   },
   "repository": {
@@ -12,7 +24,9 @@
   },
   "files": [
     "fonts",
-    "index.js"
+    "index.js",
+    "index.d.ts",
+    "OFL.txt"
   ],
   "keywords": [
     "wavefont",
@@ -27,7 +41,7 @@
     "timeseries"
   ],
   "author": "Dmitry Iv <dfcreative@gmail.com>",
-  "license": "MIT",
+  "license": "(MIT AND OFL-1.1)",
   "bugs": {
     "url": "https://github.com/dy/linefont/issues"
   },
