@@ -4,5 +4,5 @@ gftools==0.9.33 # any other version is likely to fail
 ufonormalizer>=0.6
 fontbakery[googlefonts]>=0.8.11
 fonttools>=4.42.1
-diffenator2>=0.2.7
+diffenator2==0.3.8 # newest importable next to glyphsets 0.6.11 (0.4+ needs new glyphsets API)
 bumpfontversion
