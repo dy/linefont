@@ -109,3 +109,7 @@ venv
 .DS_Store
 .ninja_log
 .ninja_log
+sources/instance_ufos/
+*.ninja
+.ninja_log
+out/

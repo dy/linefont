@@ -69,10 +69,13 @@
 
   <key>openTypeOS2TypoLineGap</key>
   <integer>0</integer>
+  <!-- win metrics clip on Windows: they cover all ink, -1289..1395 at wght 1000 (a segment
+       glyph sits below its origin until cursive attachment raises it); line spacing comes
+       from the typo metrics (USE_TYPO_METRICS) -->
   <key>openTypeOS2WinAscent</key>
-  <integer>{{upm FONT.ascender }}</integer>
+  <integer>1400</integer>
   <key>openTypeOS2WinDescent</key>
-	<integer>{{upm FONT.descender }}</integer>
+  <integer>1300</integer>
 
   <key>openTypeOS2Panose</key>
   <array>
