@@ -18,7 +18,7 @@ template.stamp: _sources/master.ufo _sources/master.ufo/features.fea _sources/ma
 	touch template.stamp
 
 build.stamp: venv template.stamp
-	. venv/bin/activate && for file in sources/*.ufo; do ufonormalizer -a --float-precision 3 -m $$file; done && gftools builder sources/config.yaml && fonttools ttLib.woff2 compress "./fonts/variable/Linefont[wdth,wght].ttf" -o "./fonts/variable/Linefont[wdth,wght].woff2"
+	. venv/bin/activate && for file in sources/*.ufo; do ufonormalizer -a --float-precision 3 -m $$file; done && gftools builder sources/config.yaml && python scripts/pairs.py fonts/variable/*.ttf fonts/ttf/*.ttf && python scripts/woff2.py fonts/webfonts fonts/variable/*.ttf fonts/ttf/*.ttf && cp "fonts/webfonts/Linefont[wdth,wght].woff2" fonts/variable/
 	touch build.stamp
 
 venv: venv/touchfile
@@ -29,6 +29,7 @@ venv/touchfile: requirements.txt
 	touch venv/touchfile
 
 test: venv build.stamp
+	. venv/bin/activate && python scripts/test-pairs.py fonts/variable/*.ttf fonts/ttf/*.ttf
 	. venv/bin/activate && mkdir -p out/ out/fontbakery && fontbakery check-googlefonts -l WARN --full-lists --succinct --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md $(shell find fonts/ttf -type f)  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
 
 proof: venv build.stamp
