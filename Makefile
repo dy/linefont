@@ -18,7 +18,7 @@ template.stamp: _sources/master.ufo _sources/master.ufo/features.fea _sources/ma
 	touch template.stamp
 
 build.stamp: venv template.stamp
-	. venv/bin/activate && for file in sources/*.ufo; do ufonormalizer -a --float-precision 3 -m $$file; done && gftools builder sources/config.yaml && python scripts/pairs.py fonts/variable/*.ttf fonts/ttf/*.ttf && python scripts/woff2.py fonts/webfonts fonts/variable/*.ttf fonts/ttf/*.ttf && cp "fonts/webfonts/Linefont[wdth,wght].woff2" fonts/variable/
+	. venv/bin/activate && for file in sources/*.ufo; do ufonormalizer -a --float-precision 3 -m $$file; done && gftools builder sources/config.yaml && python scripts/woff2.py fonts/webfonts fonts/variable/*.ttf fonts/ttf/*.ttf && cp "fonts/webfonts/Linefont[wdth,wght].woff2" fonts/variable/
 	touch build.stamp
 
 venv: venv/touchfile
@@ -33,7 +33,6 @@ venv/touchfile: requirements.txt
 # older version on Google Fonts until it updates; width names come from the axis registry and
 # every named instance is at Normal width, so no instance name reaches the length limit.
 test: venv build.stamp
-	. venv/bin/activate && python scripts/test-pairs.py fonts/variable/*.ttf fonts/ttf/*.ttf
 	. venv/bin/activate && mkdir -p out/fontbakery && fontbakery check-googlefonts -l WARN --full-lists --succinct -x vertical_metrics_regressions -x family_and_style_max_length --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md fonts/variable/*.ttf
 
 proof: venv build.stamp

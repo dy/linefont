@@ -45,7 +45,6 @@ Linefont values span from 0 to 100, assigned to different characters:
 * <kbd>0-9</kbd> chars for simplified manual input with step 10 (height = number×10).
 * <kbd>a-zA-Z</kbd> for manual input with step 2, softened at edges <kbd>a</kbd> and <kbd>Z</kbd> (height = number of letter).
 * <kbd>U+0100-017F</kbd> for 0-127 values with step 1 (extra 27 values). <kbd>U+0180</kbd> renders as max (off-by-one clamp guard), higher codepoints render blank.
-* <kbd>U+F0000-F7F7F</kbd> for line segments by level pair: one char per point, the segment from the previous level to its own, see [segments](#segments).
 
 
 ## Variable Axes
@@ -63,20 +62,12 @@ Tag | Range | Meaning
 * Characters outside of visible ranges (but within Core Latin) are clipped to _0_, eg. ` `, `\t` etc.
 * Caret span is -30..130 (covers full ink incl. value 127), so line-height = 1.6 is minimal non-overlapping selection.
 
-## Segments
-
-Char <kbd>U+F0000 | a << 8 | b</kbd> is the line segment from level `a` (previous point) to level `b` (_0_-_127_ each), with the joint at `b`: what value chars draw for `b` after `a`, as one precomposed glyph. Values need layout rules that look at every previous value; segments need none, so text lays out like plain text: about 10× faster in Safari (and every iOS browser) and 6× in Chrome.
-
-* A line is the first value's char, then a segment per point: `segments()` below.
-* Chars are outside the BMP: 2 UTF-16 units each in JS strings.
-* Static OTF fonts carry values only. Web fonts drop glyph names.
-
 ## npm package
 
 _Linefont_ npm package contains the font and a js function that produces font string from values.
 
 ```js
-import lf, { char, segment, segments } from 'linefont'
+import lf, { char } from 'linefont'
 
 // characters for values from 0..127 range (clamped & rounded)
 lf(0, 1, 50, 99, 127) // 'ĀāĲţſ'
@@ -84,9 +75,6 @@ lf(0, 1, 50, 99, 127) // 'ĀāĲţſ'
 // arrays or typed arrays of any length
 lf(new Float32Array([0, 64, 127])) // 'Āŀſ'
 
-// the same line as the first value, then one segment char per point
-segments(0, 64, 127) // char(0) + segment(0, 64) + segment(64, 127)
-segments(new Float32Array([0, 64, 127]))
 ```
 
 Types included.
